@@ -1,1 +1,6 @@
-venv/\n.env\n__pycache__/\nvectorstore/\n*.pyc
+# .gitignore
+venv/
+__pycache__/
+vectorstore/
+*.pyc
+.env
