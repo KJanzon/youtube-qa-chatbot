@@ -1,13 +1,20 @@
 import streamlit as st
 from dotenv import load_dotenv
 import os
-import re
+import shutil
 from urllib.parse import urlparse, parse_qs
+import time
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import OpenAIEmbeddings
+
+from app.youtube_processor import process_and_embed_video, extract_chapters, extract_video_id
+from utils.time import timestamp_to_seconds
+from utils.chapters import rank_sources_by_chapter_similarity
 
 # Load environment variables
 load_dotenv()
@@ -26,34 +33,40 @@ if "jump_triggered" not in st.session_state:
 if "auto_play" not in st.session_state:
     st.session_state.auto_play = False
 
-# --- Helpers ---
-def extract_video_id(url):
-    parsed_url = urlparse(url)
-    if parsed_url.hostname in ("youtu.be", "www.youtu.be"):
-        return parsed_url.path[1:]
-    if parsed_url.hostname in ("www.youtube.com", "youtube.com"):
-        if parsed_url.path == "/watch":
-            return parse_qs(parsed_url.query).get("v", [None])[0]
-        if parsed_url.path.startswith(('/embed/', '/v/')):
-            return parsed_url.path.split('/')[2]
-    return None
-
-def timestamp_to_seconds(ts):
-    h, m, s = map(int, ts.split(":"))
-    return h * 3600 + m * 60 + s
-
 # --- Sidebar: video input ---
 video_url = st.sidebar.text_input("Paste YouTube video link:")
 
 if video_url:
-    video_id = extract_video_id(video_url)
-    if not video_id:
-        st.sidebar.error("❌ Invalid YouTube URL")
-    else:
-        st.sidebar.success("✅ Video loaded")
+    try:
+        video_id = extract_video_id(video_url)
+        persist_dir = os.path.join("vectorstore", "youtube", video_id)
+
+        # Button to clear cache for this video
+        if st.sidebar.button("🗑️ Clear vectorstore cache for this video"):
+            if os.path.exists(persist_dir):
+                shutil.rmtree(persist_dir)
+                time.sleep(0.5)
+                os.makedirs(persist_dir, exist_ok=True)
+                st.sidebar.success("🧹 Cache cleared. Reprocess will occur on reload.")
+
+        if not os.path.exists(persist_dir) or not os.listdir(persist_dir):
+            process_and_embed_video(video_url, persist_dir=persist_dir)
+            st.sidebar.success("✅ Video processed and embedded")
+        else:
+            st.sidebar.info("📂 Using cached vectorstore")
+
+        # Display chapters if available
+        chapters = extract_chapters(video_id)
+        if chapters:
+            st.sidebar.markdown("### 📑 Video Chapters")
+            for chap in chapters:
+                if st.sidebar.button(f"⏩ {chap['timestamp']} - {chap['title']}", key=f"chapter_{chap['seconds']}"):
+                    st.session_state.video_timestamp = chap["seconds"]
+                    st.session_state.auto_play = True
+        else:
+            st.sidebar.markdown("_No chapters found in the video description._")
 
         # Load vectorstore
-        persist_dir = "vectorstore/youtube"
         embeddings = OpenAIEmbeddings()
         vectorstore = Chroma(persist_directory=persist_dir, embedding_function=embeddings)
         retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
@@ -73,6 +86,11 @@ if video_url:
             st.session_state.chat_history.append(("user", query))
             with st.spinner("🤖 Thinking..."):
                 result = qa_chain.invoke({"query": query})
+
+                  # ⬇️ Step 2: Reorder sources to prioritize relevant chapter
+                result["source_documents"] = rank_sources_by_chapter_similarity(
+                query, result["source_documents"], chapters)
+    
             st.session_state.chat_history.append(("assistant", result["result"]))
             st.session_state.last_result_docs = result["source_documents"]
             if result["source_documents"]:
@@ -110,6 +128,6 @@ if video_url:
         # Reset jump trigger
         if st.session_state.jump_triggered:
             st.session_state.jump_triggered = False
- 
 
-#test
+    except Exception as e:
+        st.sidebar.error(str(e))
