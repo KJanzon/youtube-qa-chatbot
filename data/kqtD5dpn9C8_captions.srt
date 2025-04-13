@@ -1,0 +1,6383 @@
+1
+00:00:02,159 --> 00:00:05,359
+in this python tutorial you're going to
+
+2
+00:00:03,840 --> 00:00:07,359
+learn everything you need to know to
+
+3
+00:00:05,359 --> 00:00:08,960
+start programming in python if you want
+
+4
+00:00:07,359 --> 00:00:10,639
+to learn python programming for data
+
+5
+00:00:08,960 --> 00:00:12,880
+science machine learning or web
+
+6
+00:00:10,639 --> 00:00:14,719
+development this python tutorial is the
+
+7
+00:00:12,880 --> 00:00:16,720
+perfect place to learn python you don't
+
+8
+00:00:14,719 --> 00:00:18,080
+need any prior knowledge in python or
+
+9
+00:00:16,720 --> 00:00:19,920
+programming in general i'm going to
+
+10
+00:00:18,080 --> 00:00:21,920
+teach you everything from scratch i'm
+
+11
+00:00:19,920 --> 00:00:23,199
+mosh hamadani and i've taught millions
+
+12
+00:00:21,920 --> 00:00:25,119
+of people how to code through this
+
+13
+00:00:23,199 --> 00:00:27,039
+channel if you're new here make sure to
+
+14
+00:00:25,119 --> 00:00:30,080
+subscribe as i upload new videos every
+
+15
+00:00:27,039 --> 00:00:31,439
+week now let's jump in and get started
+
+16
+00:00:30,080 --> 00:00:32,800
+all right before we get started let me
+
+17
+00:00:31,439 --> 00:00:34,640
+give you some ideas about what you can
+
+18
+00:00:32,800 --> 00:00:36,880
+do with python that's a very common
+
+19
+00:00:34,640 --> 00:00:38,480
+question python is a multi-purpose
+
+20
+00:00:36,880 --> 00:00:40,640
+programming language so you can use it
+
+21
+00:00:38,480 --> 00:00:42,719
+for a variety of different tasks you can
+
+22
+00:00:40,640 --> 00:00:44,160
+use python for machine learning and ai
+
+23
+00:00:42,719 --> 00:00:45,760
+in fact python is the number one
+
+24
+00:00:44,160 --> 00:00:47,680
+language for machine learning and data
+
+25
+00:00:45,760 --> 00:00:50,320
+science projects python is also very
+
+26
+00:00:47,680 --> 00:00:51,920
+popular in web development using python
+
+27
+00:00:50,320 --> 00:00:54,000
+and a framework called django you can
+
+28
+00:00:51,920 --> 00:00:56,399
+build amazing websites here are five
+
+29
+00:00:54,000 --> 00:01:00,079
+websites powered with python and django
+
+30
+00:00:56,399 --> 00:01:02,160
+youtube instagram spotify dropbox and
+
+31
+00:01:00,079 --> 00:01:04,159
+pinterest you can also use python in
+
+32
+00:01:02,160 --> 00:01:06,560
+automation with python you can save your
+
+33
+00:01:04,159 --> 00:01:09,360
+time and increase your productivity by
+
+34
+00:01:06,560 --> 00:01:10,720
+automating repetitive tasks so why are
+
+35
+00:01:09,360 --> 00:01:12,799
+you learning python are you learning it
+
+36
+00:01:10,720 --> 00:01:14,560
+for automation for data science or web
+
+37
+00:01:12,799 --> 00:01:17,200
+development let me know in the comment
+
+38
+00:01:14,560 --> 00:01:17,200
+section below
+
+39
+00:01:19,759 --> 00:01:23,840
+all right the first thing i want you to
+
+40
+00:01:20,960 --> 00:01:26,320
+do is to head over to python.org to
+
+41
+00:01:23,840 --> 00:01:28,400
+download the latest version of python so
+
+42
+00:01:26,320 --> 00:01:31,680
+you go to downloads and select the
+
+43
+00:01:28,400 --> 00:01:31,680
+latest version of python
+
+44
+00:01:33,119 --> 00:01:37,840
+here in your downloads folder you should
+
+45
+00:01:34,720 --> 00:01:38,960
+see this package simply double click it
+
+46
+00:01:37,840 --> 00:01:41,520
+you're going to see this python
+
+47
+00:01:38,960 --> 00:01:44,159
+installer if you're on windows you will
+
+48
+00:01:41,520 --> 00:01:46,479
+see this checkbox over here add python
+
+49
+00:01:44,159 --> 00:01:48,320
+to path make sure to check it it's
+
+50
+00:01:46,479 --> 00:01:50,960
+really important otherwise you're not
+
+51
+00:01:48,320 --> 00:01:52,880
+going to be able to follow this tutorial
+
+52
+00:01:50,960 --> 00:01:53,759
+simply click on continue
+
+53
+00:01:52,880 --> 00:01:55,119
+again
+
+54
+00:01:53,759 --> 00:01:57,119
+one more time
+
+55
+00:01:55,119 --> 00:02:00,240
+i agree with the terms
+
+56
+00:01:57,119 --> 00:02:02,000
+and install the latest version of python
+
+57
+00:02:00,240 --> 00:02:03,840
+now here you need to enter the username
+
+58
+00:02:02,000 --> 00:02:04,880
+password of your computer
+
+59
+00:02:03,840 --> 00:02:08,759
+so
+
+60
+00:02:04,880 --> 00:02:08,759
+let's do that real quick
+
+61
+00:02:08,879 --> 00:02:13,040
+next you need to install a code editor
+
+62
+00:02:11,200 --> 00:02:15,280
+we use a code editor to write our code
+
+63
+00:02:13,040 --> 00:02:18,000
+and execute it the most popular code
+
+64
+00:02:15,280 --> 00:02:20,080
+editor for python is pycharm you can get
+
+65
+00:02:18,000 --> 00:02:21,200
+it from jetbrains.com
+
+66
+00:02:20,080 --> 00:02:23,280
+pycharm
+
+67
+00:02:21,200 --> 00:02:25,920
+so on this page
+
+68
+00:02:23,280 --> 00:02:27,280
+click on download
+
+69
+00:02:25,920 --> 00:02:29,280
+you should see two different editions
+
+70
+00:02:27,280 --> 00:02:31,280
+one is the professional edition which is
+
+71
+00:02:29,280 --> 00:02:33,280
+commercial and we also have this
+
+72
+00:02:31,280 --> 00:02:35,120
+community edition which is free and open
+
+73
+00:02:33,280 --> 00:02:37,840
+source so we're going to download the
+
+74
+00:02:35,120 --> 00:02:37,840
+community edition
+
+75
+00:02:39,680 --> 00:02:45,360
+now in your downloads folder you should
+
+76
+00:02:41,360 --> 00:02:45,360
+have this package let's double click it
+
+77
+00:02:45,440 --> 00:02:49,200
+if you're on windows you're going to see
+
+78
+00:02:47,120 --> 00:02:51,120
+an installation wizard so simply click
+
+79
+00:02:49,200 --> 00:02:53,519
+on the next button until you install
+
+80
+00:02:51,120 --> 00:02:56,000
+pycharm if you're on a mac you need to
+
+81
+00:02:53,519 --> 00:02:58,959
+drag this pycharm and drop it onto the
+
+82
+00:02:56,000 --> 00:02:58,959
+applications folder
+
+83
+00:03:00,159 --> 00:03:02,879
+now
+
+84
+00:03:01,040 --> 00:03:04,720
+let's open it
+
+85
+00:03:02,879 --> 00:03:06,640
+the first time you open pycharm you have
+
+86
+00:03:04,720 --> 00:03:09,760
+to configure a few settings we don't
+
+87
+00:03:06,640 --> 00:03:11,360
+want to spend time on this so over here
+
+88
+00:03:09,760 --> 00:03:14,159
+we're going to click on skip remaining
+
+89
+00:03:11,360 --> 00:03:16,400
+and set defaults
+
+90
+00:03:14,159 --> 00:03:18,720
+now let's create a new project
+
+91
+00:03:16,400 --> 00:03:22,000
+over here we can specify the location
+
+92
+00:03:18,720 --> 00:03:25,040
+and the name of our python project so
+
+93
+00:03:22,000 --> 00:03:26,959
+let's append hello world to this path
+
+94
+00:03:25,040 --> 00:03:29,360
+this is where our python project is
+
+95
+00:03:26,959 --> 00:03:32,360
+going to be saved so let's click on
+
+96
+00:03:29,360 --> 00:03:32,360
+create
+
+97
+00:03:32,400 --> 00:03:36,480
+in this window you can see the content
+
+98
+00:03:34,000 --> 00:03:38,400
+of our project so here's our hello world
+
+99
+00:03:36,480 --> 00:03:40,799
+project currently we have only one
+
+100
+00:03:38,400 --> 00:03:42,879
+folder inside this project that is vn
+
+101
+00:03:40,799 --> 00:03:44,400
+which is short for virtual environment
+
+102
+00:03:42,879 --> 00:03:46,400
+we'll talk about virtual environments in
+
+103
+00:03:44,400 --> 00:03:49,120
+the future so currently we don't have
+
+104
+00:03:46,400 --> 00:03:51,760
+any python files inside this project a
+
+105
+00:03:49,120 --> 00:03:53,439
+real application can consist of tens or
+
+106
+00:03:51,760 --> 00:03:55,840
+hundreds or even thousands of python
+
+107
+00:03:53,439 --> 00:03:57,599
+files so let's right click on the
+
+108
+00:03:55,840 --> 00:04:00,560
+project name
+
+109
+00:03:57,599 --> 00:04:03,920
+and go to new python file we're going to
+
+110
+00:04:00,560 --> 00:04:03,920
+call this file up
+
+111
+00:04:04,000 --> 00:04:08,000
+now we can collapse this project window
+
+112
+00:04:05,680 --> 00:04:10,400
+by clicking on this icon so now we have
+
+113
+00:04:08,000 --> 00:04:12,840
+more space let's write our first python
+
+114
+00:04:10,400 --> 00:04:15,760
+code we're going to write print all in
+
+115
+00:04:12,840 --> 00:04:18,799
+lowercase then add parentheses
+
+116
+00:04:15,760 --> 00:04:20,160
+then add quotes either single quotes or
+
+117
+00:04:18,799 --> 00:04:21,440
+double quotes
+
+118
+00:04:20,160 --> 00:04:23,520
+and inside this code we're going to
+
+119
+00:04:21,440 --> 00:04:25,919
+write hello world
+
+120
+00:04:23,520 --> 00:04:28,320
+so this is what we call a string a
+
+121
+00:04:25,919 --> 00:04:30,639
+string means a string or sequence of
+
+122
+00:04:28,320 --> 00:04:33,600
+characters in simple words that means
+
+123
+00:04:30,639 --> 00:04:35,520
+textual data so in python and in many
+
+124
+00:04:33,600 --> 00:04:37,520
+other programming languages whenever
+
+125
+00:04:35,520 --> 00:04:39,520
+we're dealing with textual data we
+
+126
+00:04:37,520 --> 00:04:40,720
+should always surround our text with
+
+127
+00:04:39,520 --> 00:04:42,880
+quotes
+
+128
+00:04:40,720 --> 00:04:43,919
+in python we can use single or double
+
+129
+00:04:42,880 --> 00:04:45,680
+quotes
+
+130
+00:04:43,919 --> 00:04:48,080
+now this print you see here is a
+
+131
+00:04:45,680 --> 00:04:49,759
+function built into python and we can
+
+132
+00:04:48,080 --> 00:04:52,080
+use it to print a message on our
+
+133
+00:04:49,759 --> 00:04:54,160
+application window so let me show you
+
+134
+00:04:52,080 --> 00:04:56,720
+how to run this code
+
+135
+00:04:54,160 --> 00:04:58,320
+on the top we go to the run menu and
+
+136
+00:04:56,720 --> 00:05:00,240
+then select run
+
+137
+00:04:58,320 --> 00:05:02,479
+note that there is a shortcut associated
+
+138
+00:05:00,240 --> 00:05:05,759
+with this command i always use shortcuts
+
+139
+00:05:02,479 --> 00:05:07,120
+because they increase my productivity so
+
+140
+00:05:05,759 --> 00:05:09,120
+let's click on this
+
+141
+00:05:07,120 --> 00:05:10,479
+now select app
+
+142
+00:05:09,120 --> 00:05:12,160
+and over here
+
+143
+00:05:10,479 --> 00:05:14,479
+you can see this little window this is
+
+144
+00:05:12,160 --> 00:05:16,720
+what we call the terminal window and it
+
+145
+00:05:14,479 --> 00:05:18,320
+shows the output of our program
+
+146
+00:05:16,720 --> 00:05:20,400
+so here's the hello world message
+
+147
+00:05:18,320 --> 00:05:22,240
+printed in the terminal window now as
+
+148
+00:05:20,400 --> 00:05:23,759
+you learn more python you will learn how
+
+149
+00:05:22,240 --> 00:05:25,680
+to build applications that have a
+
+150
+00:05:23,759 --> 00:05:27,520
+graphical user interface that's an
+
+151
+00:05:25,680 --> 00:05:30,160
+advanced topic so for now let's not
+
+152
+00:05:27,520 --> 00:05:30,160
+worry about it
+
+153
+00:05:34,639 --> 00:05:38,960
+alright now let's talk about variables
+
+154
+00:05:36,639 --> 00:05:41,440
+we use variables to temporarily store
+
+155
+00:05:38,960 --> 00:05:43,840
+data in a computer's memory for example
+
+156
+00:05:41,440 --> 00:05:46,240
+we can store the price of a product or
+
+157
+00:05:43,840 --> 00:05:48,560
+someone's name their email their age and
+
+158
+00:05:46,240 --> 00:05:50,880
+so on let me show you so
+
+159
+00:05:48,560 --> 00:05:54,000
+to declare a variable we start by typing
+
+160
+00:05:50,880 --> 00:05:56,319
+a name for that variable let's say age
+
+161
+00:05:54,000 --> 00:05:59,199
+then we add an equal sign
+
+162
+00:05:56,319 --> 00:06:01,360
+and then we type a value let's say 20.
+
+163
+00:05:59,199 --> 00:06:03,520
+so with this we're storing the number 20
+
+164
+00:06:01,360 --> 00:06:05,840
+somewhere in our computer's memory and
+
+165
+00:06:03,520 --> 00:06:08,240
+we're attaching this age as a label for
+
+166
+00:06:05,840 --> 00:06:10,479
+that memory location so now we can read
+
+167
+00:06:08,240 --> 00:06:13,120
+the value at this memory location and
+
+168
+00:06:10,479 --> 00:06:15,039
+print it on the terminal so instead of
+
+169
+00:06:13,120 --> 00:06:17,520
+printing hello world we want to print
+
+170
+00:06:15,039 --> 00:06:19,680
+the value of the age variable
+
+171
+00:06:17,520 --> 00:06:21,840
+so i'm going to delete what we have
+
+172
+00:06:19,680 --> 00:06:25,039
+inside parenthesis
+
+173
+00:06:21,840 --> 00:06:27,280
+and type age note that i'm not adding
+
+174
+00:06:25,039 --> 00:06:29,759
+quotes because if i run this program
+
+175
+00:06:27,280 --> 00:06:31,840
+we'll see the text h on the terminal we
+
+176
+00:06:29,759 --> 00:06:35,759
+don't want that we want the value of the
+
+177
+00:06:31,840 --> 00:06:36,639
+age variable so let's remove the quote
+
+178
+00:06:35,759 --> 00:06:38,720
+and
+
+179
+00:06:36,639 --> 00:06:41,039
+print the value of the age variable
+
+180
+00:06:38,720 --> 00:06:43,440
+now here on the toolbar you can click on
+
+181
+00:06:41,039 --> 00:06:44,960
+this play icon to run your program or
+
+182
+00:06:43,440 --> 00:06:47,759
+you can use the shortcut that i showed
+
+183
+00:06:44,960 --> 00:06:51,280
+you in the last video so the shortcut is
+
+184
+00:06:47,759 --> 00:06:52,160
+over here on a mac that's ctrl shift and
+
+185
+00:06:51,280 --> 00:06:53,840
+r
+
+186
+00:06:52,160 --> 00:06:54,960
+so
+
+187
+00:06:53,840 --> 00:06:56,800
+there you go
+
+188
+00:06:54,960 --> 00:06:58,160
+now you can see the value of the age
+
+189
+00:06:56,800 --> 00:06:59,919
+variable
+
+190
+00:06:58,160 --> 00:07:02,800
+now we can also change the value of a
+
+191
+00:06:59,919 --> 00:07:05,360
+variable for example on line 2
+
+192
+00:07:02,800 --> 00:07:07,199
+we can set 8 to 30.
+
+193
+00:07:05,360 --> 00:07:10,080
+now when we run our program
+
+194
+00:07:07,199 --> 00:07:12,880
+we see 30. so as you can see our program
+
+195
+00:07:10,080 --> 00:07:14,960
+gets executed from top to bottom
+
+196
+00:07:12,880 --> 00:07:16,880
+so this is how we can declare and use a
+
+197
+00:07:14,960 --> 00:07:17,919
+variable now let's look at a few more
+
+198
+00:07:16,880 --> 00:07:19,520
+examples
+
+199
+00:07:17,919 --> 00:07:21,599
+so i'm going to declare
+
+200
+00:07:19,520 --> 00:07:24,960
+another variable called price
+
+201
+00:07:21,599 --> 00:07:26,800
+and set it to 19.95
+
+202
+00:07:24,960 --> 00:07:28,639
+so in python we can use numbers with a
+
+203
+00:07:26,800 --> 00:07:31,199
+decimal point or
+
+204
+00:07:28,639 --> 00:07:35,120
+whole numbers we can also declare a
+
+205
+00:07:31,199 --> 00:07:38,560
+variable and assign it a string value so
+
+206
+00:07:35,120 --> 00:07:40,479
+let's say first underline name so if you
+
+207
+00:07:38,560 --> 00:07:42,639
+want to use multiple words in the name
+
+208
+00:07:40,479 --> 00:07:45,199
+of a variable we should separate them
+
+209
+00:07:42,639 --> 00:07:47,759
+using an underscore this makes our code
+
+210
+00:07:45,199 --> 00:07:49,840
+more readable see what would happen if i
+
+211
+00:07:47,759 --> 00:07:53,120
+didn't use this underline
+
+212
+00:07:49,840 --> 00:07:56,080
+this is not easily readable so we always
+
+213
+00:07:53,120 --> 00:07:58,400
+separate multiple words by an underscore
+
+214
+00:07:56,080 --> 00:08:00,160
+now we set this to a string so we can
+
+215
+00:07:58,400 --> 00:08:02,720
+use single quotes or
+
+216
+00:08:00,160 --> 00:08:04,560
+double quotes let's say march
+
+217
+00:08:02,720 --> 00:08:07,120
+we also have a special type of value
+
+218
+00:08:04,560 --> 00:08:09,599
+called a boolean value which can be true
+
+219
+00:08:07,120 --> 00:08:12,560
+or false that is like yes or no in
+
+220
+00:08:09,599 --> 00:08:15,520
+english let me show you so i'm going to
+
+221
+00:08:12,560 --> 00:08:18,479
+declare another variable called is
+
+222
+00:08:15,520 --> 00:08:21,039
+online and set it to true
+
+223
+00:08:18,479 --> 00:08:23,840
+we could also set it to false what we
+
+224
+00:08:21,039 --> 00:08:26,000
+have here is called a boolean value
+
+225
+00:08:23,840 --> 00:08:28,319
+now note that python is a case sensitive
+
+226
+00:08:26,000 --> 00:08:31,280
+language so it's sensitive to lowercase
+
+227
+00:08:28,319 --> 00:08:34,000
+and uppercase letters in this case if i
+
+228
+00:08:31,280 --> 00:08:35,760
+use a lowercase f
+
+229
+00:08:34,000 --> 00:08:38,080
+we can see an error over here because
+
+230
+00:08:35,760 --> 00:08:40,959
+this is not recognized in python
+
+231
+00:08:38,080 --> 00:08:43,360
+so false with a capital f is a special
+
+232
+00:08:40,959 --> 00:08:45,200
+keyword in python that represents the
+
+233
+00:08:43,360 --> 00:08:47,040
+boolean false value
+
+234
+00:08:45,200 --> 00:08:48,800
+so this is how we can declare and use
+
+235
+00:08:47,040 --> 00:08:50,320
+variables in python
+
+236
+00:08:48,800 --> 00:08:51,120
+all right now here's a little exercise
+
+237
+00:08:50,320 --> 00:08:52,880
+for you
+
+238
+00:08:51,120 --> 00:08:54,640
+imagine we want to write a program for a
+
+239
+00:08:52,880 --> 00:08:57,519
+hospital so we're going to check in a
+
+240
+00:08:54,640 --> 00:08:59,839
+patient named john smith he's 20 years
+
+241
+00:08:57,519 --> 00:09:02,080
+old and is a new patient i want you to
+
+242
+00:08:59,839 --> 00:09:04,399
+declare a few variables to store these
+
+243
+00:09:02,080 --> 00:09:08,360
+values use the comment box below to
+
+244
+00:09:04,399 --> 00:09:08,360
+share your code with others
+
+245
+00:09:12,480 --> 00:09:16,399
+in this tutorial i'm going to show you
+
+246
+00:09:13,839 --> 00:09:18,720
+how to receive input from the user so in
+
+247
+00:09:16,399 --> 00:09:21,600
+python we have another built-in function
+
+248
+00:09:18,720 --> 00:09:23,760
+called input we use this to read a value
+
+249
+00:09:21,600 --> 00:09:26,080
+from the terminal window let me show you
+
+250
+00:09:23,760 --> 00:09:27,920
+so we add parenthesis
+
+251
+00:09:26,080 --> 00:09:31,680
+then we type in a string here we can
+
+252
+00:09:27,920 --> 00:09:34,160
+type a message like what is your name we
+
+253
+00:09:31,680 --> 00:09:35,760
+had a question mark followed by a space
+
+254
+00:09:34,160 --> 00:09:39,200
+you will see why we need this space in a
+
+255
+00:09:35,760 --> 00:09:41,360
+second so let's run this program
+
+256
+00:09:39,200 --> 00:09:44,160
+we get this message now we have to enter
+
+257
+00:09:41,360 --> 00:09:45,600
+a value so we click over here
+
+258
+00:09:44,160 --> 00:09:47,680
+now you can see that the carrot is
+
+259
+00:09:45,600 --> 00:09:49,760
+separated from the question mark this is
+
+260
+00:09:47,680 --> 00:09:50,880
+because of the white space that we added
+
+261
+00:09:49,760 --> 00:09:53,200
+over here
+
+262
+00:09:50,880 --> 00:09:56,560
+so now we have to type a value let's say
+
+263
+00:09:53,200 --> 00:09:58,800
+john when we press enter
+
+264
+00:09:56,560 --> 00:10:01,120
+this function will return the value that
+
+265
+00:09:58,800 --> 00:10:02,880
+we entered in the terminal window so we
+
+266
+00:10:01,120 --> 00:10:05,519
+can get that value and store it in a
+
+267
+00:10:02,880 --> 00:10:08,399
+variable so let's declare a variable
+
+268
+00:10:05,519 --> 00:10:10,640
+called name and set it to the return
+
+269
+00:10:08,399 --> 00:10:12,480
+value of the input function
+
+270
+00:10:10,640 --> 00:10:16,560
+now we can print a greeting message for
+
+271
+00:10:12,480 --> 00:10:18,480
+this user so we use the print function
+
+272
+00:10:16,560 --> 00:10:19,920
+we say hello
+
+273
+00:10:18,480 --> 00:10:22,399
+we had a space
+
+274
+00:10:19,920 --> 00:10:25,120
+now after the string we want to add the
+
+275
+00:10:22,399 --> 00:10:26,240
+value of the name variable so we use a
+
+276
+00:10:25,120 --> 00:10:27,760
+plus sign
+
+277
+00:10:26,240 --> 00:10:30,079
+and then type name
+
+278
+00:10:27,760 --> 00:10:32,399
+what we are doing here is called string
+
+279
+00:10:30,079 --> 00:10:35,279
+concatenation so we're combining this
+
+280
+00:10:32,399 --> 00:10:36,720
+string with another string
+
+281
+00:10:35,279 --> 00:10:39,040
+now let's run our program and see what
+
+282
+00:10:36,720 --> 00:10:40,079
+happens so what is your name
+
+283
+00:10:39,040 --> 00:10:41,040
+mosh
+
+284
+00:10:40,079 --> 00:10:43,040
+now
+
+285
+00:10:41,040 --> 00:10:44,720
+we get this message hello mosh
+
+286
+00:10:43,040 --> 00:10:47,839
+so this is how we can use the input
+
+287
+00:10:44,720 --> 00:10:47,839
+function in python
+
+288
+00:10:52,079 --> 00:10:56,399
+you'll learn about the three types of
+
+289
+00:10:53,600 --> 00:10:59,519
+data in python we have numbers
+
+290
+00:10:56,399 --> 00:11:01,200
+strings and booleans now there are times
+
+291
+00:10:59,519 --> 00:11:03,519
+you want to convert the value of a
+
+292
+00:11:01,200 --> 00:11:05,920
+variable from one type to another let me
+
+293
+00:11:03,519 --> 00:11:06,880
+show you so we're going to use our input
+
+294
+00:11:05,920 --> 00:11:10,959
+function
+
+295
+00:11:06,880 --> 00:11:13,600
+to read the user's birth year so enter
+
+296
+00:11:10,959 --> 00:11:15,040
+your birth here
+
+297
+00:11:13,600 --> 00:11:17,519
+now this input function is going to
+
+298
+00:11:15,040 --> 00:11:19,040
+return a value so we can store it in a
+
+299
+00:11:17,519 --> 00:11:21,760
+variable called
+
+300
+00:11:19,040 --> 00:11:22,800
+birth underline year
+
+301
+00:11:21,760 --> 00:11:24,480
+okay
+
+302
+00:11:22,800 --> 00:11:26,800
+now let's write code to calculate the
+
+303
+00:11:24,480 --> 00:11:28,720
+age of this user so we write an
+
+304
+00:11:26,800 --> 00:11:32,800
+expression like this currently we are in
+
+305
+00:11:28,720 --> 00:11:34,000
+the year 2020 so 2020 minus
+
+306
+00:11:32,800 --> 00:11:35,680
+birth year
+
+307
+00:11:34,000 --> 00:11:37,839
+this expression or piece of code is
+
+308
+00:11:35,680 --> 00:11:40,000
+going to produce a value so once again
+
+309
+00:11:37,839 --> 00:11:43,120
+we can store that value in a variable
+
+310
+00:11:40,000 --> 00:11:44,880
+let's call that variable age
+
+311
+00:11:43,120 --> 00:11:46,560
+now let's print age
+
+312
+00:11:44,880 --> 00:11:47,760
+on the terminal
+
+313
+00:11:46,560 --> 00:11:49,440
+let's run our program and see what
+
+314
+00:11:47,760 --> 00:11:50,160
+happens
+
+315
+00:11:49,440 --> 00:11:52,720
+so
+
+316
+00:11:50,160 --> 00:11:55,600
+my birth year is 1982.
+
+317
+00:11:52,720 --> 00:11:57,519
+enter oops our program crashed so
+
+318
+00:11:55,600 --> 00:11:59,600
+whenever you see this red message that
+
+319
+00:11:57,519 --> 00:12:01,839
+indicates an error so this error
+
+320
+00:11:59,600 --> 00:12:05,360
+occurred in this file
+
+321
+00:12:01,839 --> 00:12:07,200
+that is our app.pi on line two
+
+322
+00:12:05,360 --> 00:12:09,760
+right below that you can see the piece
+
+323
+00:12:07,200 --> 00:12:12,320
+of code that generated this error
+
+324
+00:12:09,760 --> 00:12:14,800
+so that is this expression 2020 minus
+
+325
+00:12:12,320 --> 00:12:17,040
+birth year now below that you can see
+
+326
+00:12:14,800 --> 00:12:21,440
+the type of error so here we have
+
+327
+00:12:17,040 --> 00:12:22,800
+unsupported types for subtraction
+
+328
+00:12:21,440 --> 00:12:26,160
+we have int
+
+329
+00:12:22,800 --> 00:12:28,560
+and stir what are these well this end is
+
+330
+00:12:26,160 --> 00:12:31,839
+short for integer and that represents a
+
+331
+00:12:28,560 --> 00:12:34,639
+whole number in programming so
+
+332
+00:12:31,839 --> 00:12:37,600
+2020 is an example of an integer
+
+333
+00:12:34,639 --> 00:12:39,760
+now birth year is an example of a string
+
+334
+00:12:37,600 --> 00:12:41,920
+because whenever we call the input
+
+335
+00:12:39,760 --> 00:12:44,320
+function this function would return a
+
+336
+00:12:41,920 --> 00:12:46,880
+value as a string even if we enter a
+
+337
+00:12:44,320 --> 00:12:50,000
+number in other words when i entered
+
+338
+00:12:46,880 --> 00:12:53,279
+1982 this input function returned a
+
+339
+00:12:50,000 --> 00:12:56,160
+string with these characters 1982 so
+
+340
+00:12:53,279 --> 00:12:59,200
+this string is different from the number
+
+341
+00:12:56,160 --> 00:13:00,560
+1982 they're completely different types
+
+342
+00:12:59,200 --> 00:13:02,639
+so in this case
+
+343
+00:13:00,560 --> 00:13:04,639
+let me delete these lines
+
+344
+00:13:02,639 --> 00:13:07,920
+the reason we got this error is that we
+
+345
+00:13:04,639 --> 00:13:10,480
+try to subtract a string from an integer
+
+346
+00:13:07,920 --> 00:13:12,079
+so our code looks like this
+
+347
+00:13:10,480 --> 00:13:14,240
+1982
+
+348
+00:13:12,079 --> 00:13:16,240
+now python doesn't know how to subtract
+
+349
+00:13:14,240 --> 00:13:18,399
+a string from an integer
+
+350
+00:13:16,240 --> 00:13:20,959
+so to solve this problem we need to
+
+351
+00:13:18,399 --> 00:13:22,560
+convert this string to an integer
+
+352
+00:13:20,959 --> 00:13:24,240
+now in python we have a bunch of
+
+353
+00:13:22,560 --> 00:13:26,560
+built-in functions for converting the
+
+354
+00:13:24,240 --> 00:13:29,040
+types of our variables so
+
+355
+00:13:26,560 --> 00:13:31,680
+we have this end function
+
+356
+00:13:29,040 --> 00:13:33,279
+we can pass our burst here to it
+
+357
+00:13:31,680 --> 00:13:35,600
+and this will return the new numeric
+
+358
+00:13:33,279 --> 00:13:38,399
+representation of the birth year
+
+359
+00:13:35,600 --> 00:13:39,920
+so to solve this problem
+
+360
+00:13:38,399 --> 00:13:42,079
+we need to replace
+
+361
+00:13:39,920 --> 00:13:43,680
+the string
+
+362
+00:13:42,079 --> 00:13:45,680
+with the end function
+
+363
+00:13:43,680 --> 00:13:47,920
+so let's see what's going on here on the
+
+364
+00:13:45,680 --> 00:13:49,680
+first line we call the input function
+
+365
+00:13:47,920 --> 00:13:52,320
+this returns a string
+
+366
+00:13:49,680 --> 00:13:54,560
+on the second line we pass the string to
+
+367
+00:13:52,320 --> 00:13:56,880
+our end function the in function will
+
+368
+00:13:54,560 --> 00:13:58,000
+return the numeric representation of the
+
+369
+00:13:56,880 --> 00:13:59,040
+burst year
+
+370
+00:13:58,000 --> 00:14:02,000
+then
+
+371
+00:13:59,040 --> 00:14:04,079
+we subtract it from 2020 we get the age
+
+372
+00:14:02,000 --> 00:14:06,480
+and store it in the age variable now
+
+373
+00:14:04,079 --> 00:14:07,279
+let's run our program
+
+374
+00:14:06,480 --> 00:14:08,800
+so
+
+375
+00:14:07,279 --> 00:14:11,440
+1982
+
+376
+00:14:08,800 --> 00:14:14,320
+and there you go i'm 38 years old
+
+377
+00:14:11,440 --> 00:14:16,639
+so this is how the in function works now
+
+378
+00:14:14,320 --> 00:14:19,120
+we also have another built-in function
+
+379
+00:14:16,639 --> 00:14:21,519
+called float that is for converting a
+
+380
+00:14:19,120 --> 00:14:23,680
+value to a floating point number a
+
+381
+00:14:21,519 --> 00:14:25,839
+floating point number in python and
+
+382
+00:14:23,680 --> 00:14:28,079
+other programming languages is a number
+
+383
+00:14:25,839 --> 00:14:31,920
+with a decimal point so
+
+384
+00:14:28,079 --> 00:14:35,440
+10 is an integer and 10.1 is a float
+
+385
+00:14:31,920 --> 00:14:38,240
+so we have int we have float and we also
+
+386
+00:14:35,440 --> 00:14:39,279
+have bool for converting a value to a
+
+387
+00:14:38,240 --> 00:14:42,000
+boolean
+
+388
+00:14:39,279 --> 00:14:44,800
+and finally we have stir for converting
+
+389
+00:14:42,000 --> 00:14:46,800
+a value to a string so these are the
+
+390
+00:14:44,800 --> 00:14:48,800
+built-in functions for converting the
+
+391
+00:14:46,800 --> 00:14:50,639
+type of our variables
+
+392
+00:14:48,800 --> 00:14:52,720
+now here's a little exercise for you i
+
+393
+00:14:50,639 --> 00:14:54,800
+want you to write a basic calculator
+
+394
+00:14:52,720 --> 00:14:57,199
+program so here we have to enter two
+
+395
+00:14:54,800 --> 00:15:00,079
+numbers we can type a whole number or a
+
+396
+00:14:57,199 --> 00:15:02,079
+number with a decimal point
+
+397
+00:15:00,079 --> 00:15:03,600
+and then our program will print the sum
+
+398
+00:15:02,079 --> 00:15:05,519
+of these two numbers
+
+399
+00:15:03,600 --> 00:15:09,600
+so pause the video spend two minutes on
+
+400
+00:15:05,519 --> 00:15:09,600
+this exercise and then see my solution
+
+401
+00:15:10,959 --> 00:15:14,959
+all right first we're going to call our
+
+402
+00:15:12,399 --> 00:15:16,720
+input function to read the first number
+
+403
+00:15:14,959 --> 00:15:18,959
+we get the result and store it in a
+
+404
+00:15:16,720 --> 00:15:21,040
+variable called first
+
+405
+00:15:18,959 --> 00:15:24,240
+now let's declare
+
+406
+00:15:21,040 --> 00:15:26,399
+another variable called second and read
+
+407
+00:15:24,240 --> 00:15:27,519
+the second number
+
+408
+00:15:26,399 --> 00:15:29,120
+now
+
+409
+00:15:27,519 --> 00:15:32,240
+we calculate the sum
+
+410
+00:15:29,120 --> 00:15:34,240
+so that is first plus second
+
+411
+00:15:32,240 --> 00:15:36,720
+now let's see what happens when we print
+
+412
+00:15:34,240 --> 00:15:39,440
+sum on the terminal
+
+413
+00:15:36,720 --> 00:15:42,240
+so i enter 10 and 20
+
+414
+00:15:39,440 --> 00:15:44,880
+but instead of 30 we get 10 20. this is
+
+415
+00:15:42,240 --> 00:15:47,440
+because we're combining or concatenating
+
+416
+00:15:44,880 --> 00:15:49,519
+two strings so
+
+417
+00:15:47,440 --> 00:15:52,240
+as i told you before the input function
+
+418
+00:15:49,519 --> 00:15:55,040
+returns a string so
+
+419
+00:15:52,240 --> 00:15:57,920
+this line will be equivalent to first
+
+420
+00:15:55,040 --> 00:15:59,519
+equals 10. we're dealing with a string
+
+421
+00:15:57,920 --> 00:16:00,880
+not an integer
+
+422
+00:15:59,519 --> 00:16:02,480
+similarly
+
+423
+00:16:00,880 --> 00:16:05,440
+second is going to be
+
+424
+00:16:02,480 --> 00:16:09,279
+20 as a string so when we combine two
+
+425
+00:16:05,440 --> 00:16:11,920
+strings 10 plus 20 will get
+
+426
+00:16:09,279 --> 00:16:16,000
+10 20 because we're dealing with textual
+
+427
+00:16:11,920 --> 00:16:18,000
+data okay so to solve this problem
+
+428
+00:16:16,000 --> 00:16:20,880
+we need to convert the values we read to
+
+429
+00:16:18,000 --> 00:16:22,880
+their numeric representation so over
+
+430
+00:16:20,880 --> 00:16:24,160
+here
+
+431
+00:16:22,880 --> 00:16:26,880
+we're going to pass
+
+432
+00:16:24,160 --> 00:16:28,480
+first to our int function
+
+433
+00:16:26,880 --> 00:16:30,320
+and here as well
+
+434
+00:16:28,480 --> 00:16:34,399
+now let's run our program
+
+435
+00:16:30,320 --> 00:16:38,000
+so we enter 10 and 20 we get 30. what if
+
+436
+00:16:34,399 --> 00:16:40,320
+we enter a floating point number so 10.1
+
+437
+00:16:38,000 --> 00:16:41,839
+and 20.
+
+438
+00:16:40,320 --> 00:16:44,480
+we got an error
+
+439
+00:16:41,839 --> 00:16:46,800
+so to solve this problem
+
+440
+00:16:44,480 --> 00:16:49,279
+we need to treat both these values as
+
+441
+00:16:46,800 --> 00:16:52,720
+floats so instead of the in function
+
+442
+00:16:49,279 --> 00:16:55,360
+we're going to use the float function
+
+443
+00:16:52,720 --> 00:16:58,079
+now let's run our program one more time
+
+444
+00:16:55,360 --> 00:17:00,959
+we enter a whole number and a floating
+
+445
+00:16:58,079 --> 00:17:05,520
+point number so the result is correct
+
+446
+00:17:00,959 --> 00:17:06,880
+now let's add a label over here so sum
+
+447
+00:17:05,520 --> 00:17:08,319
+is
+
+448
+00:17:06,880 --> 00:17:09,919
+plus sum
+
+449
+00:17:08,319 --> 00:17:12,240
+let's run our program
+
+450
+00:17:09,919 --> 00:17:14,480
+one more time 10 and 20.
+
+451
+00:17:12,240 --> 00:17:17,360
+once again we got an error the error is
+
+452
+00:17:14,480 --> 00:17:21,039
+saying that python can only concatenate
+
+453
+00:17:17,360 --> 00:17:23,919
+strings not floats to strings
+
+454
+00:17:21,039 --> 00:17:26,480
+so on line four we have a string we're
+
+455
+00:17:23,919 --> 00:17:28,559
+concatenating this with a float because
+
+456
+00:17:26,480 --> 00:17:30,559
+the result of this expression is a
+
+457
+00:17:28,559 --> 00:17:33,440
+floating point number we're adding two
+
+458
+00:17:30,559 --> 00:17:36,320
+floats so the result is a float as well
+
+459
+00:17:33,440 --> 00:17:38,480
+so python doesn't know how to evaluate
+
+460
+00:17:36,320 --> 00:17:40,960
+code like this
+
+461
+00:17:38,480 --> 00:17:42,400
+it doesn't know how to concatenate a
+
+462
+00:17:40,960 --> 00:17:45,200
+float
+
+463
+00:17:42,400 --> 00:17:47,520
+to a string to solve this problem
+
+464
+00:17:45,200 --> 00:17:48,640
+we need to convert sum to your string so
+
+465
+00:17:47,520 --> 00:17:51,039
+this is where
+
+466
+00:17:48,640 --> 00:17:54,160
+we use the stir function
+
+467
+00:17:51,039 --> 00:17:58,080
+now let's run the program again so
+
+468
+00:17:54,160 --> 00:17:59,520
+10 plus 20.1 and here's the result
+
+469
+00:17:58,080 --> 00:18:01,760
+and one last thing
+
+470
+00:17:59,520 --> 00:18:03,280
+in this example i'm calling the float
+
+471
+00:18:01,760 --> 00:18:05,360
+function at the time we want to
+
+472
+00:18:03,280 --> 00:18:07,280
+calculate the sum of these two numbers
+
+473
+00:18:05,360 --> 00:18:09,120
+but this is not a requirement we can
+
+474
+00:18:07,280 --> 00:18:12,320
+call the float function
+
+475
+00:18:09,120 --> 00:18:14,960
+over here so this input function returns
+
+476
+00:18:12,320 --> 00:18:17,679
+a string we can pass that string to our
+
+477
+00:18:14,960 --> 00:18:20,000
+float function take a look so float
+
+478
+00:18:17,679 --> 00:18:22,240
+parenthesis like this
+
+479
+00:18:20,000 --> 00:18:24,240
+so the value that we're passing to the
+
+480
+00:18:22,240 --> 00:18:26,960
+float function is the value that is
+
+481
+00:18:24,240 --> 00:18:29,200
+returned from the input function
+
+482
+00:18:26,960 --> 00:18:32,080
+similarly
+
+483
+00:18:29,200 --> 00:18:33,440
+we call the float function over here
+
+484
+00:18:32,080 --> 00:18:35,760
+now
+
+485
+00:18:33,440 --> 00:18:38,640
+we can change this expression to first
+
+486
+00:18:35,760 --> 00:18:40,160
+plus second that is another way to write
+
+487
+00:18:38,640 --> 00:18:41,760
+this piece of code
+
+488
+00:18:40,160 --> 00:18:44,080
+so type conversion is important in
+
+489
+00:18:41,760 --> 00:18:45,600
+python and other programming languages
+
+490
+00:18:44,080 --> 00:18:49,520
+there are times you need to convert the
+
+491
+00:18:45,600 --> 00:18:49,520
+type of variable to a different type
+
+492
+00:18:53,840 --> 00:18:56,720
+in this tutorial i'm going to show you a
+
+493
+00:18:55,200 --> 00:18:59,440
+bunch of cool things you can do with
+
+494
+00:18:56,720 --> 00:19:01,760
+strings in python so let's start by
+
+495
+00:18:59,440 --> 00:19:04,400
+declaring a variable called course
+
+496
+00:19:01,760 --> 00:19:06,000
+and set it to python for
+
+497
+00:19:04,400 --> 00:19:07,760
+beginners
+
+498
+00:19:06,000 --> 00:19:10,480
+now this string that we have over here
+
+499
+00:19:07,760 --> 00:19:12,240
+is technically an object an object in
+
+500
+00:19:10,480 --> 00:19:14,480
+python is like an object in the real
+
+501
+00:19:12,240 --> 00:19:16,799
+world as a metaphor think of the remote
+
+502
+00:19:14,480 --> 00:19:18,480
+control of your tv this remote control
+
+503
+00:19:16,799 --> 00:19:20,559
+is an object and it has a bunch of
+
+504
+00:19:18,480 --> 00:19:23,120
+capabilities it has a bunch of buttons
+
+505
+00:19:20,559 --> 00:19:25,120
+for turning your tv on turning it off
+
+506
+00:19:23,120 --> 00:19:27,039
+changing the volume and so on now in
+
+507
+00:19:25,120 --> 00:19:29,520
+this program this course variable is
+
+508
+00:19:27,039 --> 00:19:31,840
+storing a string object this string
+
+509
+00:19:29,520 --> 00:19:32,880
+object has a bunch of capabilities so if
+
+510
+00:19:31,840 --> 00:19:35,360
+we type
+
+511
+00:19:32,880 --> 00:19:37,360
+course dot you can see all the
+
+512
+00:19:35,360 --> 00:19:39,280
+capabilities available in a string
+
+513
+00:19:37,360 --> 00:19:41,440
+object these are basically functions
+
+514
+00:19:39,280 --> 00:19:43,440
+that you can call just like the print or
+
+515
+00:19:41,440 --> 00:19:45,600
+input functions the difference is that
+
+516
+00:19:43,440 --> 00:19:47,440
+the print and input functions are
+
+517
+00:19:45,600 --> 00:19:49,600
+general purpose functions they don't
+
+518
+00:19:47,440 --> 00:19:51,600
+belong to a particular object but the
+
+519
+00:19:49,600 --> 00:19:54,480
+functions you see over here are specific
+
+520
+00:19:51,600 --> 00:19:56,960
+to strings now more accurately we refer
+
+521
+00:19:54,480 --> 00:19:59,039
+to these as methods so when a function
+
+522
+00:19:56,960 --> 00:20:00,880
+is part of an object we refer to that
+
+523
+00:19:59,039 --> 00:20:03,360
+function as a method
+
+524
+00:20:00,880 --> 00:20:06,000
+so let's look at a few examples here we
+
+525
+00:20:03,360 --> 00:20:07,840
+have a function or a method called upper
+
+526
+00:20:06,000 --> 00:20:10,640
+and we use that to convert a string to
+
+527
+00:20:07,840 --> 00:20:12,400
+uppercase so if we print
+
+528
+00:20:10,640 --> 00:20:14,400
+course.upper
+
+529
+00:20:12,400 --> 00:20:16,320
+and run this program they can see our
+
+530
+00:20:14,400 --> 00:20:17,520
+course in uppercase
+
+531
+00:20:16,320 --> 00:20:19,360
+pretty useful
+
+532
+00:20:17,520 --> 00:20:21,600
+now what you need to understand here is
+
+533
+00:20:19,360 --> 00:20:24,240
+that this upper method does not change
+
+534
+00:20:21,600 --> 00:20:27,520
+our original string it will return a new
+
+535
+00:20:24,240 --> 00:20:29,600
+string so right after this if we print
+
+536
+00:20:27,520 --> 00:20:31,520
+course
+
+537
+00:20:29,600 --> 00:20:34,400
+you can see that our course variable is
+
+538
+00:20:31,520 --> 00:20:36,000
+not affected so the upper method returns
+
+539
+00:20:34,400 --> 00:20:38,159
+a new string
+
+540
+00:20:36,000 --> 00:20:40,720
+now similarly we have another method
+
+541
+00:20:38,159 --> 00:20:43,679
+called lower for converting a string to
+
+542
+00:20:40,720 --> 00:20:45,280
+lowercase we have a method called find
+
+543
+00:20:43,679 --> 00:20:47,600
+to see if our string contains a
+
+544
+00:20:45,280 --> 00:20:50,159
+character or a sequence of characters
+
+545
+00:20:47,600 --> 00:20:50,960
+for example here we can pass
+
+546
+00:20:50,159 --> 00:20:53,360
+y
+
+547
+00:20:50,960 --> 00:20:57,280
+and this will return the index of the
+
+548
+00:20:53,360 --> 00:20:59,520
+first occurrence of y in our string so
+
+549
+00:20:57,280 --> 00:21:01,520
+in python the index of the first
+
+550
+00:20:59,520 --> 00:21:04,400
+character in a string is 0. so here we
+
+551
+00:21:01,520 --> 00:21:06,480
+have 0 1 2 3 4 and so on so when we run
+
+552
+00:21:04,400 --> 00:21:09,520
+this program you're going to see one on
+
+553
+00:21:06,480 --> 00:21:11,679
+the terminal because the index of y is
+
+554
+00:21:09,520 --> 00:21:14,480
+1. take a look first i'm going to delete
+
+555
+00:21:11,679 --> 00:21:17,520
+this line we don't need it anymore also
+
+556
+00:21:14,480 --> 00:21:20,000
+let's do this line let's run the program
+
+557
+00:21:17,520 --> 00:21:20,000
+there you go
+
+558
+00:21:20,080 --> 00:21:24,000
+now as i told you before python is
+
+559
+00:21:21,840 --> 00:21:28,720
+sensitive to lowercase and uppercase
+
+560
+00:21:24,000 --> 00:21:31,039
+letters so if i pass an uppercase y here
+
+561
+00:21:28,720 --> 00:21:32,880
+this find method returns negative 1
+
+562
+00:21:31,039 --> 00:21:35,440
+because we don't have an uppercase y in
+
+563
+00:21:32,880 --> 00:21:38,159
+this string we can also pass a sequence
+
+564
+00:21:35,440 --> 00:21:41,200
+of characters for example 4. so this
+
+565
+00:21:38,159 --> 00:21:43,120
+will return the index of the word 4.
+
+566
+00:21:41,200 --> 00:21:44,880
+take a look
+
+567
+00:21:43,120 --> 00:21:46,240
+so it's 7.
+
+568
+00:21:44,880 --> 00:21:47,760
+now there are times we want to replace
+
+569
+00:21:46,240 --> 00:21:48,480
+something in a string with something
+
+570
+00:21:47,760 --> 00:21:51,360
+else
+
+571
+00:21:48,480 --> 00:21:52,799
+to do that we use the replace method
+
+572
+00:21:51,360 --> 00:21:54,720
+replace
+
+573
+00:21:52,799 --> 00:21:55,679
+so we can replace 4
+
+574
+00:21:54,720 --> 00:21:58,080
+with
+
+575
+00:21:55,679 --> 00:21:59,679
+a string containing the number 4. take a
+
+576
+00:21:58,080 --> 00:22:02,159
+look
+
+577
+00:21:59,679 --> 00:22:03,440
+so python for beginners
+
+578
+00:22:02,159 --> 00:22:04,799
+obviously
+
+579
+00:22:03,440 --> 00:22:06,720
+if you look for a character or a
+
+580
+00:22:04,799 --> 00:22:08,799
+sequence of characters that don't exist
+
+581
+00:22:06,720 --> 00:22:11,360
+in our string nothing is going to happen
+
+582
+00:22:08,799 --> 00:22:14,720
+for example if we try to replace x with
+
+583
+00:22:11,360 --> 00:22:16,559
+4 obviously we don't have x here so
+
+584
+00:22:14,720 --> 00:22:18,960
+nothing is going to happen
+
+585
+00:22:16,559 --> 00:22:21,200
+also just like the upper method the
+
+586
+00:22:18,960 --> 00:22:22,960
+replace method is not going to modify
+
+587
+00:22:21,200 --> 00:22:25,120
+our original string so it's going to
+
+588
+00:22:22,960 --> 00:22:27,360
+return a new string this is because
+
+589
+00:22:25,120 --> 00:22:29,760
+strings in python and many other
+
+590
+00:22:27,360 --> 00:22:31,919
+programming languages are immutable we
+
+591
+00:22:29,760 --> 00:22:33,520
+cannot change them once we create them
+
+592
+00:22:31,919 --> 00:22:35,440
+whenever we want to change your string
+
+593
+00:22:33,520 --> 00:22:36,400
+we'll end up with a new string object in
+
+594
+00:22:35,440 --> 00:22:37,679
+memory
+
+595
+00:22:36,400 --> 00:22:39,440
+now one last thing i want to cover in
+
+596
+00:22:37,679 --> 00:22:41,440
+this tutorial there are times you want
+
+597
+00:22:39,440 --> 00:22:43,760
+to see if your string contains a
+
+598
+00:22:41,440 --> 00:22:45,840
+character or a sequence of characters
+
+599
+00:22:43,760 --> 00:22:48,799
+one way to do that is using the find
+
+600
+00:22:45,840 --> 00:22:50,080
+method that we talked about so let's see
+
+601
+00:22:48,799 --> 00:22:52,320
+if our string
+
+602
+00:22:50,080 --> 00:22:54,559
+contains python
+
+603
+00:22:52,320 --> 00:22:56,400
+now when we run this program
+
+604
+00:22:54,559 --> 00:22:58,559
+that is the index of the first
+
+605
+00:22:56,400 --> 00:23:01,280
+occurrence of the word python in our
+
+606
+00:22:58,559 --> 00:23:03,360
+string now in python we can also use the
+
+607
+00:23:01,280 --> 00:23:05,520
+in operator so we can write an
+
+608
+00:23:03,360 --> 00:23:07,120
+expression like this
+
+609
+00:23:05,520 --> 00:23:10,880
+we type a string
+
+610
+00:23:07,120 --> 00:23:13,280
+python then we type in this is a special
+
+611
+00:23:10,880 --> 00:23:15,039
+keyword in python this is what we call
+
+612
+00:23:13,280 --> 00:23:17,520
+the in operator
+
+613
+00:23:15,039 --> 00:23:18,640
+so after that we type the name of our
+
+614
+00:23:17,520 --> 00:23:20,799
+variable
+
+615
+00:23:18,640 --> 00:23:23,760
+so with this expression we're checking
+
+616
+00:23:20,799 --> 00:23:25,919
+to see if we have python in course as
+
+617
+00:23:23,760 --> 00:23:28,240
+you can see python code is very readable
+
+618
+00:23:25,919 --> 00:23:29,679
+it's like plain english so when we run
+
+619
+00:23:28,240 --> 00:23:31,760
+this program
+
+620
+00:23:29,679 --> 00:23:34,080
+instead of seeing the index of the first
+
+621
+00:23:31,760 --> 00:23:36,240
+occurrence of python we see a boolean
+
+622
+00:23:34,080 --> 00:23:37,280
+value this is more desirable in a lot of
+
+623
+00:23:36,240 --> 00:23:38,880
+cases
+
+624
+00:23:37,280 --> 00:23:41,520
+next we're going to look at arithmetic
+
+625
+00:23:38,880 --> 00:23:41,520
+operations
+
+626
+00:23:45,919 --> 00:23:49,200
+in this tutorial i'm going to show you
+
+627
+00:23:47,200 --> 00:23:51,440
+the arithmetic operators that we have in
+
+628
+00:23:49,200 --> 00:23:53,200
+python these are the same arithmetic
+
+629
+00:23:51,440 --> 00:23:55,039
+operators that we have in math for
+
+630
+00:23:53,200 --> 00:23:57,679
+example we can add numbers we can
+
+631
+00:23:55,039 --> 00:23:58,799
+subtract them multiply them and so on so
+
+632
+00:23:57,679 --> 00:24:02,159
+let's print
+
+633
+00:23:58,799 --> 00:24:03,360
+10 plus 3. let me run this program we
+
+634
+00:24:02,159 --> 00:24:06,159
+have 13.
+
+635
+00:24:03,360 --> 00:24:07,600
+so this is the addition operator we also
+
+636
+00:24:06,159 --> 00:24:09,520
+have subtraction
+
+637
+00:24:07,600 --> 00:24:12,320
+we have multiplication
+
+638
+00:24:09,520 --> 00:24:14,480
+and division now technically we have two
+
+639
+00:24:12,320 --> 00:24:16,640
+different types of division operators we
+
+640
+00:24:14,480 --> 00:24:18,960
+have a division with one slash and
+
+641
+00:24:16,640 --> 00:24:20,799
+another with two slashes let's look at
+
+642
+00:24:18,960 --> 00:24:22,400
+the differences if you use a single
+
+643
+00:24:20,799 --> 00:24:24,640
+slash
+
+644
+00:24:22,400 --> 00:24:26,799
+we get a floating point number that is a
+
+645
+00:24:24,640 --> 00:24:28,480
+number with a decimal point but if we
+
+646
+00:24:26,799 --> 00:24:29,600
+use double slashes
+
+647
+00:24:28,480 --> 00:24:33,279
+we get
+
+648
+00:24:29,600 --> 00:24:35,440
+an integer a whole number we also have
+
+649
+00:24:33,279 --> 00:24:38,080
+the modulus operator that is indicated
+
+650
+00:24:35,440 --> 00:24:40,159
+by a percent sign and this returns the
+
+651
+00:24:38,080 --> 00:24:41,760
+remainder of the division of ten by
+
+652
+00:24:40,159 --> 00:24:44,159
+three so
+
+653
+00:24:41,760 --> 00:24:46,640
+that is one and finally we have the
+
+654
+00:24:44,159 --> 00:24:49,919
+exponent operator that is indicated by
+
+655
+00:24:46,640 --> 00:24:52,559
+two asterisks so this is 10 to the power
+
+656
+00:24:49,919 --> 00:24:54,000
+of three so when we run this we get a
+
+657
+00:24:52,559 --> 00:24:56,480
+thousand
+
+658
+00:24:54,000 --> 00:24:59,039
+now for all these operators that you saw
+
+659
+00:24:56,480 --> 00:25:01,360
+we have an augmented assignment operator
+
+660
+00:24:59,039 --> 00:25:03,679
+let me explain what it means so let's
+
+661
+00:25:01,360 --> 00:25:05,520
+say we have a variable called x
+
+662
+00:25:03,679 --> 00:25:07,520
+and we set it to 10.
+
+663
+00:25:05,520 --> 00:25:10,080
+now we want to increment the value of x
+
+664
+00:25:07,520 --> 00:25:10,960
+by 3. so we have to write code like this
+
+665
+00:25:10,080 --> 00:25:14,080
+x
+
+666
+00:25:10,960 --> 00:25:16,080
+equals x plus 3. when python executes
+
+667
+00:25:14,080 --> 00:25:18,240
+this code it's going to evaluate this
+
+668
+00:25:16,080 --> 00:25:20,320
+expression or this piece of code the
+
+669
+00:25:18,240 --> 00:25:23,679
+result of this expression is 10 plus 3
+
+670
+00:25:20,320 --> 00:25:24,799
+which is 13. then it will store 13 in
+
+671
+00:25:23,679 --> 00:25:26,559
+the x
+
+672
+00:25:24,799 --> 00:25:29,440
+now there is another way to achieve the
+
+673
+00:25:26,559 --> 00:25:32,400
+same result using less code we can type
+
+674
+00:25:29,440 --> 00:25:34,320
+x plus equal three
+
+675
+00:25:32,400 --> 00:25:36,960
+what we have on line three is exactly
+
+676
+00:25:34,320 --> 00:25:38,640
+identical to what we have on line two so
+
+677
+00:25:36,960 --> 00:25:41,679
+what we have here is called the
+
+678
+00:25:38,640 --> 00:25:43,679
+augmented assignment operator so we have
+
+679
+00:25:41,679 --> 00:25:46,240
+this assignment operator but we have
+
+680
+00:25:43,679 --> 00:25:48,240
+augmented or enhanced it
+
+681
+00:25:46,240 --> 00:25:50,720
+now here we can also use
+
+682
+00:25:48,240 --> 00:25:54,240
+subtraction to decrease the value of x
+
+683
+00:25:50,720 --> 00:25:56,320
+by 3 we can use multiplication and so on
+
+684
+00:25:54,240 --> 00:25:58,799
+so these are the arithmetic operators in
+
+685
+00:25:56,320 --> 00:25:58,799
+python
+
+686
+00:26:03,200 --> 00:26:07,039
+all right let me ask you a question i'm
+
+687
+00:26:04,960 --> 00:26:10,480
+going to declare a variable called x and
+
+688
+00:26:07,039 --> 00:26:12,480
+set it to 10 plus 3 times 2. what do you
+
+689
+00:26:10,480 --> 00:26:14,240
+think is the result of this expression
+
+690
+00:26:12,480 --> 00:26:16,320
+this is a basic math question that
+
+691
+00:26:14,240 --> 00:26:17,200
+unfortunately a lot of people fail to
+
+692
+00:26:16,320 --> 00:26:20,480
+answer
+
+693
+00:26:17,200 --> 00:26:22,159
+the answer is 16. here's the reason in
+
+694
+00:26:20,480 --> 00:26:24,720
+math we have this concept called
+
+695
+00:26:22,159 --> 00:26:26,880
+operator precedence and that determines
+
+696
+00:26:24,720 --> 00:26:30,080
+the order in which these operators are
+
+697
+00:26:26,880 --> 00:26:32,159
+applied so multiplication and division
+
+698
+00:26:30,080 --> 00:26:34,640
+have a higher order so this part of the
+
+699
+00:26:32,159 --> 00:26:36,240
+expression gets evaluated first so 2
+
+700
+00:26:34,640 --> 00:26:39,120
+times 3 is 6
+
+701
+00:26:36,240 --> 00:26:40,960
+and then the result is added to 10. that
+
+702
+00:26:39,120 --> 00:26:44,240
+is why the result of this expression is
+
+703
+00:26:40,960 --> 00:26:46,159
+16. now in python operator precedence is
+
+704
+00:26:44,240 --> 00:26:48,720
+exactly like math but we can always
+
+705
+00:26:46,159 --> 00:26:51,120
+change it using parenthesis for example
+
+706
+00:26:48,720 --> 00:26:53,679
+in this expression if you want 10 plus 3
+
+707
+00:26:51,120 --> 00:26:55,039
+to be evaluated first we can wrap it in
+
+708
+00:26:53,679 --> 00:26:56,799
+parenthesis
+
+709
+00:26:55,039 --> 00:26:59,200
+so
+
+710
+00:26:56,799 --> 00:27:02,159
+like this now when we execute this code
+
+711
+00:26:59,200 --> 00:27:05,360
+we're going to see 26 because 10 plus 3
+
+712
+00:27:02,159 --> 00:27:08,159
+is 13 and that divided by 2 is 26. let's
+
+713
+00:27:05,360 --> 00:27:11,279
+verify this so print x
+
+714
+00:27:08,159 --> 00:27:11,279
+and we get 26.
+
+715
+00:27:15,600 --> 00:27:19,440
+so you learn about the arithmetic
+
+716
+00:27:17,039 --> 00:27:21,760
+operators in python now in python we
+
+717
+00:27:19,440 --> 00:27:24,000
+have another set of operators called
+
+718
+00:27:21,760 --> 00:27:26,240
+comparison operators we use these
+
+719
+00:27:24,000 --> 00:27:28,080
+operators to compare values let me show
+
+720
+00:27:26,240 --> 00:27:29,279
+you so i'm going to declare a variable
+
+721
+00:27:28,080 --> 00:27:32,320
+called x
+
+722
+00:27:29,279 --> 00:27:35,200
+and set it to an expression like this 3
+
+723
+00:27:32,320 --> 00:27:37,600
+is greater than 2. so what we have here
+
+724
+00:27:35,200 --> 00:27:39,679
+this piece of code this expression is
+
+725
+00:27:37,600 --> 00:27:42,559
+called a boolean expression because it
+
+726
+00:27:39,679 --> 00:27:44,960
+produces a boolean value so in this case
+
+727
+00:27:42,559 --> 00:27:47,360
+because 3 is greater than 2 the result
+
+728
+00:27:44,960 --> 00:27:51,039
+of this expression is the boolean true
+
+729
+00:27:47,360 --> 00:27:53,120
+so if we print x
+
+730
+00:27:51,039 --> 00:27:55,360
+we get true on the terminal
+
+731
+00:27:53,120 --> 00:27:58,640
+so here is the greater than operator we
+
+732
+00:27:55,360 --> 00:28:01,279
+also have greater than or equal to we
+
+733
+00:27:58,640 --> 00:28:02,399
+have less than we have less than or
+
+734
+00:28:01,279 --> 00:28:04,320
+equal to
+
+735
+00:28:02,399 --> 00:28:06,960
+here is the equality operator which is
+
+736
+00:28:04,320 --> 00:28:08,960
+indicated by two equal signs do not
+
+737
+00:28:06,960 --> 00:28:11,200
+confuse this with the assignment
+
+738
+00:28:08,960 --> 00:28:13,440
+operator so here we're comparing three
+
+739
+00:28:11,200 --> 00:28:15,120
+and two for equality so if we run our
+
+740
+00:28:13,440 --> 00:28:17,279
+program
+
+741
+00:28:15,120 --> 00:28:19,120
+we see false because 3
+
+742
+00:28:17,279 --> 00:28:21,200
+does not equal to 2.
+
+743
+00:28:19,120 --> 00:28:22,320
+so here's the equality operator we also
+
+744
+00:28:21,200 --> 00:28:24,480
+have
+
+745
+00:28:22,320 --> 00:28:26,720
+the not equality operator that is
+
+746
+00:28:24,480 --> 00:28:28,880
+indicated by an exclamation mark
+
+747
+00:28:26,720 --> 00:28:30,880
+followed by an equal sign
+
+748
+00:28:28,880 --> 00:28:32,559
+so let's quickly recap
+
+749
+00:28:30,880 --> 00:28:35,600
+here are the comparison operators we
+
+750
+00:28:32,559 --> 00:28:38,240
+have in python greater than greater than
+
+751
+00:28:35,600 --> 00:28:39,120
+or equal to less than less than or equal
+
+752
+00:28:38,240 --> 00:28:41,520
+to
+
+753
+00:28:39,120 --> 00:28:43,279
+equal and not equal
+
+754
+00:28:41,520 --> 00:28:45,520
+these operators are extremely important
+
+755
+00:28:43,279 --> 00:28:47,360
+in real python programs because quite
+
+756
+00:28:45,520 --> 00:28:49,200
+often we have to compare values to
+
+757
+00:28:47,360 --> 00:28:51,919
+evaluate certain conditions you're going
+
+758
+00:28:49,200 --> 00:28:51,919
+to see that soon
+
+759
+00:28:56,240 --> 00:29:00,960
+in python we have another set of
+
+760
+00:28:58,000 --> 00:29:02,880
+operators called logical operators we
+
+761
+00:29:00,960 --> 00:29:05,200
+use these operators to build complex
+
+762
+00:29:02,880 --> 00:29:06,640
+rules and conditions let me show you so
+
+763
+00:29:05,200 --> 00:29:09,279
+i'm going to declare a variable called
+
+764
+00:29:06,640 --> 00:29:10,720
+price and set it to 25.
+
+765
+00:29:09,279 --> 00:29:12,640
+now let's print
+
+766
+00:29:10,720 --> 00:29:15,679
+a boolean expression like this
+
+767
+00:29:12,640 --> 00:29:17,039
+price is greater than 10.
+
+768
+00:29:15,679 --> 00:29:20,480
+now let's say we want to check to see if
+
+769
+00:29:17,039 --> 00:29:23,679
+the price is between 10 and 30. this is
+
+770
+00:29:20,480 --> 00:29:26,559
+where we use the logical and operator so
+
+771
+00:29:23,679 --> 00:29:29,600
+we type and and right after that we type
+
+772
+00:29:26,559 --> 00:29:33,200
+another boolean expression surprise less
+
+773
+00:29:29,600 --> 00:29:35,200
+than 30. so with this and operator if
+
+774
+00:29:33,200 --> 00:29:37,120
+both these boolean expressions return
+
+775
+00:29:35,200 --> 00:29:41,120
+true the result of this entire
+
+776
+00:29:37,120 --> 00:29:43,039
+expression will be true take a look so
+
+777
+00:29:41,120 --> 00:29:45,600
+in this case we get true
+
+778
+00:29:43,039 --> 00:29:46,640
+because the price is between 10 and 30
+
+779
+00:29:45,600 --> 00:29:48,000
+dollars
+
+780
+00:29:46,640 --> 00:29:49,679
+we also have
+
+781
+00:29:48,000 --> 00:29:52,159
+the or operator
+
+782
+00:29:49,679 --> 00:29:54,559
+with the or operator if at least one of
+
+783
+00:29:52,159 --> 00:29:56,159
+these boolean expressions returns true
+
+784
+00:29:54,559 --> 00:29:57,679
+then the result of this entire
+
+785
+00:29:56,159 --> 00:29:59,840
+expression will be true
+
+786
+00:29:57,679 --> 00:30:02,720
+to demonstrate this i'm going to change
+
+787
+00:29:59,840 --> 00:30:04,640
+price to 5. let's see how python is
+
+788
+00:30:02,720 --> 00:30:06,720
+going to execute this code so first it's
+
+789
+00:30:04,640 --> 00:30:10,000
+going to look at this boolean expression
+
+790
+00:30:06,720 --> 00:30:11,600
+is price greater than 10 no it's not so
+
+791
+00:30:10,000 --> 00:30:13,440
+it will keep going
+
+792
+00:30:11,600 --> 00:30:16,640
+then it will look at the second boolean
+
+793
+00:30:13,440 --> 00:30:18,320
+expression is price less than 30 it sure
+
+794
+00:30:16,640 --> 00:30:22,080
+is so the result of this entire
+
+795
+00:30:18,320 --> 00:30:23,200
+expression will be true take a look
+
+796
+00:30:22,080 --> 00:30:25,440
+there you go
+
+797
+00:30:23,200 --> 00:30:27,440
+we also have the not operator which
+
+798
+00:30:25,440 --> 00:30:30,720
+basically inverses any values that you
+
+799
+00:30:27,440 --> 00:30:32,159
+give it let me show you so
+
+800
+00:30:30,720 --> 00:30:34,960
+we're going to have one boolean
+
+801
+00:30:32,159 --> 00:30:37,200
+expression price greater than 10. the
+
+802
+00:30:34,960 --> 00:30:40,000
+result of this expression is false
+
+803
+00:30:37,200 --> 00:30:43,279
+now if you apply the not operator
+
+804
+00:30:40,000 --> 00:30:46,080
+this will inverse false to true so when
+
+805
+00:30:43,279 --> 00:30:48,559
+we run the program we get true
+
+806
+00:30:46,080 --> 00:30:51,039
+so let's quickly recap in python we have
+
+807
+00:30:48,559 --> 00:30:53,120
+three logical operators we have logical
+
+808
+00:30:51,039 --> 00:30:55,039
+and which returns true if both
+
+809
+00:30:53,120 --> 00:30:57,919
+expressions return true
+
+810
+00:30:55,039 --> 00:31:00,799
+we have logical or which returns true if
+
+811
+00:30:57,919 --> 00:31:03,279
+at least one expression returns true and
+
+812
+00:31:00,799 --> 00:31:05,840
+we have not which inverses any value
+
+813
+00:31:03,279 --> 00:31:05,840
+that we give it
+
+814
+00:31:10,080 --> 00:31:14,159
+in this tutorial we're going to talk
+
+815
+00:31:11,360 --> 00:31:15,840
+about if statements in python we use if
+
+816
+00:31:14,159 --> 00:31:18,080
+statements to make decisions in our
+
+817
+00:31:15,840 --> 00:31:19,919
+programs for example we can declare a
+
+818
+00:31:18,080 --> 00:31:21,679
+variable called temperature and
+
+819
+00:31:19,919 --> 00:31:23,519
+depending on the value of this variable
+
+820
+00:31:21,679 --> 00:31:25,200
+we can print different messages on the
+
+821
+00:31:23,519 --> 00:31:27,600
+terminal let me show you
+
+822
+00:31:25,200 --> 00:31:29,760
+so here's our temperature variable
+
+823
+00:31:27,600 --> 00:31:32,000
+we set it to 35.
+
+824
+00:31:29,760 --> 00:31:34,159
+now let's say if temperature is greater
+
+825
+00:31:32,000 --> 00:31:37,519
+than 30 we want to print a message
+
+826
+00:31:34,159 --> 00:31:39,760
+saying it's a hot day so we type if
+
+827
+00:31:37,519 --> 00:31:42,240
+then we type a condition and this is
+
+828
+00:31:39,760 --> 00:31:44,080
+where we use our comparison operators so
+
+829
+00:31:42,240 --> 00:31:46,480
+we type temperature
+
+830
+00:31:44,080 --> 00:31:48,960
+greater than 30.
+
+831
+00:31:46,480 --> 00:31:51,519
+then so we add a colon and see what
+
+832
+00:31:48,960 --> 00:31:53,360
+happens when i press enter now
+
+833
+00:31:51,519 --> 00:31:56,080
+the character is indented and this
+
+834
+00:31:53,360 --> 00:31:58,399
+represents a block of code so the code
+
+835
+00:31:56,080 --> 00:32:00,720
+that we write over here will be executed
+
+836
+00:31:58,399 --> 00:32:03,039
+if this condition is true otherwise it's
+
+837
+00:32:00,720 --> 00:32:04,080
+not going to be executed let me show you
+
+838
+00:32:03,039 --> 00:32:06,640
+so
+
+839
+00:32:04,080 --> 00:32:08,559
+we're going to print
+
+840
+00:32:06,640 --> 00:32:09,919
+it's a hot day
+
+841
+00:32:08,559 --> 00:32:12,559
+and by the way note that here i've
+
+842
+00:32:09,919 --> 00:32:15,200
+surrounded the string with double quotes
+
+843
+00:32:12,559 --> 00:32:17,440
+because here we have a single quote as
+
+844
+00:32:15,200 --> 00:32:20,240
+an apostrophe so i couldn't declare a
+
+845
+00:32:17,440 --> 00:32:22,799
+string like this with single quotes if i
+
+846
+00:32:20,240 --> 00:32:25,360
+typed it's a hot day
+
+847
+00:32:22,799 --> 00:32:27,760
+look python gets confused because it
+
+848
+00:32:25,360 --> 00:32:29,200
+thinks this single code represents the
+
+849
+00:32:27,760 --> 00:32:32,320
+end of our string so it doesn't
+
+850
+00:32:29,200 --> 00:32:34,480
+recognize the subsequent characters okay
+
+851
+00:32:32,320 --> 00:32:36,480
+so that's why we use
+
+852
+00:32:34,480 --> 00:32:38,159
+double quotes here
+
+853
+00:32:36,480 --> 00:32:39,039
+so we can have an apostrophe in our
+
+854
+00:32:38,159 --> 00:32:41,360
+string
+
+855
+00:32:39,039 --> 00:32:43,519
+so it's a hot day
+
+856
+00:32:41,360 --> 00:32:46,159
+now if i press enter again
+
+857
+00:32:43,519 --> 00:32:48,640
+the carrot is indented so the code that
+
+858
+00:32:46,159 --> 00:32:50,320
+right here will be part of our if block
+
+859
+00:32:48,640 --> 00:32:53,360
+and it will get executed if this
+
+860
+00:32:50,320 --> 00:32:57,600
+condition is true so here we can print
+
+861
+00:32:53,360 --> 00:32:59,679
+a second message drink plenty of water
+
+862
+00:32:57,600 --> 00:33:02,880
+now to terminate this block we press
+
+863
+00:32:59,679 --> 00:33:05,440
+enter and then press shift and tab
+
+864
+00:33:02,880 --> 00:33:07,600
+the carrot is no longer indented so the
+
+865
+00:33:05,440 --> 00:33:09,760
+code that we write here will always get
+
+866
+00:33:07,600 --> 00:33:11,760
+executed no matter what whether this
+
+867
+00:33:09,760 --> 00:33:13,760
+condition is true or not
+
+868
+00:33:11,760 --> 00:33:17,360
+now in c based programming languages
+
+869
+00:33:13,760 --> 00:33:19,440
+like c plus c sharp java and javascript
+
+870
+00:33:17,360 --> 00:33:21,760
+we present a block of code using curly
+
+871
+00:33:19,440 --> 00:33:23,679
+braces so
+
+872
+00:33:21,760 --> 00:33:24,559
+you start a block of code using a left
+
+873
+00:33:23,679 --> 00:33:27,279
+brace
+
+874
+00:33:24,559 --> 00:33:29,519
+and then end it using a right brace in
+
+875
+00:33:27,279 --> 00:33:31,840
+python we don't have curly braces so we
+
+876
+00:33:29,519 --> 00:33:33,679
+use indentation to represent a block of
+
+877
+00:33:31,840 --> 00:33:34,480
+code okay
+
+878
+00:33:33,679 --> 00:33:35,679
+so
+
+879
+00:33:34,480 --> 00:33:37,440
+in this case
+
+880
+00:33:35,679 --> 00:33:40,080
+these two lines are indented and that
+
+881
+00:33:37,440 --> 00:33:40,960
+means they are part of this block of
+
+882
+00:33:40,080 --> 00:33:42,720
+code
+
+883
+00:33:40,960 --> 00:33:44,320
+now let's run the program and see what
+
+884
+00:33:42,720 --> 00:33:46,159
+happens
+
+885
+00:33:44,320 --> 00:33:48,640
+so we see these two messages because the
+
+886
+00:33:46,159 --> 00:33:49,600
+temperature is greater than 30.
+
+887
+00:33:48,640 --> 00:33:52,559
+now
+
+888
+00:33:49,600 --> 00:33:54,799
+if i change the temperature to 25
+
+889
+00:33:52,559 --> 00:33:57,039
+and run the program again we don't see
+
+890
+00:33:54,799 --> 00:33:57,840
+anything okay
+
+891
+00:33:57,039 --> 00:34:00,480
+now
+
+892
+00:33:57,840 --> 00:34:01,360
+after this block let's print
+
+893
+00:34:00,480 --> 00:34:03,360
+done
+
+894
+00:34:01,360 --> 00:34:05,679
+because this code is not indented it
+
+895
+00:34:03,360 --> 00:34:09,280
+will always get executed it's not part
+
+896
+00:34:05,679 --> 00:34:11,040
+of our if block okay so take a look
+
+897
+00:34:09,280 --> 00:34:11,760
+here's the down message
+
+898
+00:34:11,040 --> 00:34:14,320
+now
+
+899
+00:34:11,760 --> 00:34:17,119
+let's add a second condition so if
+
+900
+00:34:14,320 --> 00:34:20,960
+temperature is not greater than 30 that
+
+901
+00:34:17,119 --> 00:34:23,520
+means it's less than or equal to 30. so
+
+902
+00:34:20,960 --> 00:34:25,919
+i'm gonna add a second condition so if
+
+903
+00:34:23,520 --> 00:34:28,480
+the temperature is between 20 and 30 i
+
+904
+00:34:25,919 --> 00:34:30,960
+want to print it's a nice day
+
+905
+00:34:28,480 --> 00:34:32,960
+so here we type l if
+
+906
+00:34:30,960 --> 00:34:35,520
+that is short for else if
+
+907
+00:34:32,960 --> 00:34:39,440
+and here we type a second condition
+
+908
+00:34:35,520 --> 00:34:42,240
+so temperature greater than 20.
+
+909
+00:34:39,440 --> 00:34:43,520
+we add a colon press enter now we have a
+
+910
+00:34:42,240 --> 00:34:45,679
+new block
+
+911
+00:34:43,520 --> 00:34:48,159
+so here we can print
+
+912
+00:34:45,679 --> 00:34:50,480
+it's a nice day
+
+913
+00:34:48,159 --> 00:34:52,240
+so if this condition is true that means
+
+914
+00:34:50,480 --> 00:34:54,800
+the temperature
+
+915
+00:34:52,240 --> 00:34:57,200
+is greater than 20 and less than or
+
+916
+00:34:54,800 --> 00:34:59,839
+equal to 30. now what we have here is
+
+917
+00:34:57,200 --> 00:35:01,839
+called a comment that is why it's grayed
+
+918
+00:34:59,839 --> 00:35:03,920
+out it's not real code it's just some
+
+919
+00:35:01,839 --> 00:35:06,079
+note that we add to our program python
+
+920
+00:35:03,920 --> 00:35:08,800
+is not going to execute this so whenever
+
+921
+00:35:06,079 --> 00:35:11,359
+we type a pound sign what we have after
+
+922
+00:35:08,800 --> 00:35:12,079
+is treated as a comment okay
+
+923
+00:35:11,359 --> 00:35:14,000
+so
+
+924
+00:35:12,079 --> 00:35:15,359
+if this condition is true then we're
+
+925
+00:35:14,000 --> 00:35:17,280
+going to see this message on the
+
+926
+00:35:15,359 --> 00:35:19,440
+terminal let's run our program and
+
+927
+00:35:17,280 --> 00:35:21,680
+verify this
+
+928
+00:35:19,440 --> 00:35:23,680
+there you go the temperature is 25
+
+929
+00:35:21,680 --> 00:35:25,599
+that's why we see this message
+
+930
+00:35:23,680 --> 00:35:28,640
+now we can have as many conditions as we
+
+931
+00:35:25,599 --> 00:35:30,880
+want there are no limitations okay
+
+932
+00:35:28,640 --> 00:35:31,920
+so let's add another condition
+
+933
+00:35:30,880 --> 00:35:34,560
+l if
+
+934
+00:35:31,920 --> 00:35:35,680
+temperature is greater than 10
+
+935
+00:35:34,560 --> 00:35:37,280
+then
+
+936
+00:35:35,680 --> 00:35:39,359
+we're going to print
+
+937
+00:35:37,280 --> 00:35:41,359
+it's a bit cold
+
+938
+00:35:39,359 --> 00:35:44,000
+now in this case if this condition is
+
+939
+00:35:41,359 --> 00:35:45,680
+true that means the temperature is
+
+940
+00:35:44,000 --> 00:35:48,000
+greater than 10
+
+941
+00:35:45,680 --> 00:35:49,760
+and less than or equal to 20.
+
+942
+00:35:48,000 --> 00:35:51,760
+now finally if the temperature is less
+
+943
+00:35:49,760 --> 00:35:53,200
+than 10 let's print a message saying
+
+944
+00:35:51,760 --> 00:35:54,320
+it's a cold day
+
+945
+00:35:53,200 --> 00:35:57,359
+so
+
+946
+00:35:54,320 --> 00:35:59,119
+here we type else then we add a colon
+
+947
+00:35:57,359 --> 00:36:02,240
+and now we have a new block
+
+948
+00:35:59,119 --> 00:36:04,400
+so this code will get executed if none
+
+949
+00:36:02,240 --> 00:36:07,680
+of the above conditions are true
+
+950
+00:36:04,400 --> 00:36:07,680
+so here we can print
+
+951
+00:36:07,920 --> 00:36:12,000
+it's called
+
+952
+00:36:10,160 --> 00:36:15,520
+so this is how we use if statements to
+
+953
+00:36:12,000 --> 00:36:15,520
+make decisions in our programs
+
+954
+00:36:20,000 --> 00:36:23,760
+here's a great exercise for you to
+
+955
+00:36:21,680 --> 00:36:25,599
+practice what you have learned so far i
+
+956
+00:36:23,760 --> 00:36:27,040
+want you to write a weight converter
+
+957
+00:36:25,599 --> 00:36:29,520
+program like this
+
+958
+00:36:27,040 --> 00:36:31,839
+so this program is asking me my weight i
+
+959
+00:36:29,520 --> 00:36:34,000
+enter 170.
+
+960
+00:36:31,839 --> 00:36:37,040
+next it's asking me if the weight is in
+
+961
+00:36:34,000 --> 00:36:40,240
+kilograms or pounds so i can type k for
+
+962
+00:36:37,040 --> 00:36:42,880
+kilograms or l for pounds i can type a
+
+963
+00:36:40,240 --> 00:36:46,640
+lowercase l or an uppercase l it doesn't
+
+964
+00:36:42,880 --> 00:36:49,280
+matter so let's go with a lowercase l
+
+965
+00:36:46,640 --> 00:36:51,200
+now it tells me weight in kilogram is
+
+966
+00:36:49,280 --> 00:36:52,960
+76.5
+
+967
+00:36:51,200 --> 00:36:54,880
+so go ahead and spend 5 minutes on this
+
+968
+00:36:52,960 --> 00:36:57,040
+exercise you can use the comment box
+
+969
+00:36:54,880 --> 00:36:58,480
+below to share your code with others and
+
+970
+00:36:57,040 --> 00:37:00,960
+then when you're done come back see my
+
+971
+00:36:58,480 --> 00:37:00,960
+solution
+
+972
+00:37:02,880 --> 00:37:06,960
+so first we call our input function to
+
+973
+00:37:05,280 --> 00:37:09,680
+ask the first question
+
+974
+00:37:06,960 --> 00:37:12,160
+wait we get the result and store it in a
+
+975
+00:37:09,680 --> 00:37:14,000
+variable called weight
+
+976
+00:37:12,160 --> 00:37:16,320
+next we call the input function one more
+
+977
+00:37:14,000 --> 00:37:18,240
+time to ask the second question
+
+978
+00:37:16,320 --> 00:37:20,480
+is this in kilogram
+
+979
+00:37:18,240 --> 00:37:20,480
+or
+
+980
+00:37:20,839 --> 00:37:25,839
+pounds we get the result and store it in
+
+981
+00:37:23,920 --> 00:37:27,280
+a variable called unit
+
+982
+00:37:25,839 --> 00:37:28,480
+this is where we're going to use an if
+
+983
+00:37:27,280 --> 00:37:29,280
+statement
+
+984
+00:37:28,480 --> 00:37:31,280
+so
+
+985
+00:37:29,280 --> 00:37:32,560
+we want to check to see if unit
+
+986
+00:37:31,280 --> 00:37:34,240
+equals
+
+987
+00:37:32,560 --> 00:37:36,240
+k
+
+988
+00:37:34,240 --> 00:37:38,000
+then we should convert the weight to
+
+989
+00:37:36,240 --> 00:37:39,040
+pounds and print it on a terminal
+
+990
+00:37:38,000 --> 00:37:41,760
+however
+
+991
+00:37:39,040 --> 00:37:43,760
+with this code if i type a lowercase k
+
+992
+00:37:41,760 --> 00:37:45,599
+this condition is not going to be true
+
+993
+00:37:43,760 --> 00:37:47,680
+because earlier i told you that python
+
+994
+00:37:45,599 --> 00:37:48,480
+is a case sensitive language
+
+995
+00:37:47,680 --> 00:37:50,160
+so
+
+996
+00:37:48,480 --> 00:37:52,720
+we need to convert this string to
+
+997
+00:37:50,160 --> 00:37:55,440
+uppercase earlier we talked about string
+
+998
+00:37:52,720 --> 00:37:57,839
+methods so if we type dot we can see all
+
+999
+00:37:55,440 --> 00:38:01,119
+the functions or methods available in a
+
+1000
+00:37:57,839 --> 00:38:04,160
+string object so we use the upper method
+
+1001
+00:38:01,119 --> 00:38:06,640
+and this returns a new string in case
+
+1002
+00:38:04,160 --> 00:38:08,880
+now if this condition is true first we
+
+1003
+00:38:06,640 --> 00:38:10,560
+need to convert the weight to pounds so
+
+1004
+00:38:08,880 --> 00:38:12,079
+we declare a new variable called
+
+1005
+00:38:10,560 --> 00:38:17,440
+converted
+
+1006
+00:38:12,079 --> 00:38:19,680
+get the weight and divide it by 0.45
+
+1007
+00:38:17,440 --> 00:38:21,200
+and then we can print this on a terminal
+
+1008
+00:38:19,680 --> 00:38:22,640
+so
+
+1009
+00:38:21,200 --> 00:38:24,720
+we say weight
+
+1010
+00:38:22,640 --> 00:38:27,760
+in pounds is
+
+1011
+00:38:24,720 --> 00:38:29,839
+then we append converted
+
+1012
+00:38:27,760 --> 00:38:31,520
+now to terminate this block we press
+
+1013
+00:38:29,839 --> 00:38:33,280
+shift and tab
+
+1014
+00:38:31,520 --> 00:38:35,520
+else colon
+
+1015
+00:38:33,280 --> 00:38:37,599
+so if this condition is not true that
+
+1016
+00:38:35,520 --> 00:38:39,680
+means the weight was entered in pounds
+
+1017
+00:38:37,599 --> 00:38:41,680
+so we need to convert it to kilograms
+
+1018
+00:38:39,680 --> 00:38:45,040
+once again we declare a variable
+
+1019
+00:38:41,680 --> 00:38:47,760
+converted and set it to weight times
+
+1020
+00:38:45,040 --> 00:38:49,200
+0.45
+
+1021
+00:38:47,760 --> 00:38:52,240
+and then we print
+
+1022
+00:38:49,200 --> 00:38:54,720
+weight in kilograms
+
+1023
+00:38:52,240 --> 00:38:57,359
+and here we concatenate
+
+1024
+00:38:54,720 --> 00:38:59,040
+this string with converter all right now
+
+1025
+00:38:57,359 --> 00:39:02,640
+we need to terminate this block so we
+
+1026
+00:38:59,040 --> 00:39:04,079
+press enter then shift and tab good
+
+1027
+00:39:02,640 --> 00:39:06,480
+now if we run this program we're going
+
+1028
+00:39:04,079 --> 00:39:07,520
+to see an error let me show you so let's
+
+1029
+00:39:06,480 --> 00:39:10,480
+run it
+
+1030
+00:39:07,520 --> 00:39:13,040
+here i'm going to enter 170
+
+1031
+00:39:10,480 --> 00:39:15,040
+then i type a lowercase l
+
+1032
+00:39:13,040 --> 00:39:17,839
+okay here's an error
+
+1033
+00:39:15,040 --> 00:39:21,040
+can't multiply sequence by non-end of
+
+1034
+00:39:17,839 --> 00:39:23,920
+type float so this is where we got this
+
+1035
+00:39:21,040 --> 00:39:26,000
+error when we try to multiply the weight
+
+1036
+00:39:23,920 --> 00:39:27,280
+by 0.45
+
+1037
+00:39:26,000 --> 00:39:29,599
+so
+
+1038
+00:39:27,280 --> 00:39:31,680
+that is line seven in our code now the
+
+1039
+00:39:29,599 --> 00:39:34,720
+reason this is happening is because the
+
+1040
+00:39:31,680 --> 00:39:36,560
+wait variable is storing a string object
+
+1041
+00:39:34,720 --> 00:39:39,280
+because earlier i told you the input
+
+1042
+00:39:36,560 --> 00:39:41,599
+function always returns a string so here
+
+1043
+00:39:39,280 --> 00:39:44,800
+we need to convert the weight
+
+1044
+00:39:41,599 --> 00:39:46,240
+to a number we can either use the end or
+
+1045
+00:39:44,800 --> 00:39:48,560
+the float function
+
+1046
+00:39:46,240 --> 00:39:49,599
+let's run the program one more time
+
+1047
+00:39:48,560 --> 00:39:52,000
+so
+
+1048
+00:39:49,599 --> 00:39:53,520
+170
+
+1049
+00:39:52,000 --> 00:39:55,440
+in pounds
+
+1050
+00:39:53,520 --> 00:39:59,040
+here's the second error can only
+
+1051
+00:39:55,440 --> 00:40:01,200
+concatenate string not float to string
+
+1052
+00:39:59,040 --> 00:40:02,480
+and that error occurred
+
+1053
+00:40:01,200 --> 00:40:04,240
+over here
+
+1054
+00:40:02,480 --> 00:40:06,480
+when we try to print the weight in
+
+1055
+00:40:04,240 --> 00:40:07,920
+kilograms so
+
+1056
+00:40:06,480 --> 00:40:10,400
+look at line seven
+
+1057
+00:40:07,920 --> 00:40:12,800
+in this case weight as an integer we are
+
+1058
+00:40:10,400 --> 00:40:14,480
+multiplying an integer by a float and
+
+1059
+00:40:12,800 --> 00:40:16,560
+the result of this operation is going to
+
+1060
+00:40:14,480 --> 00:40:18,160
+be a float
+
+1061
+00:40:16,560 --> 00:40:21,119
+now on line eight we are trying to
+
+1062
+00:40:18,160 --> 00:40:23,200
+concatenate or combine a string with a
+
+1063
+00:40:21,119 --> 00:40:24,480
+float and python doesn't know how to
+
+1064
+00:40:23,200 --> 00:40:26,480
+execute this code
+
+1065
+00:40:24,480 --> 00:40:29,760
+to solve this problem we need to convert
+
+1066
+00:40:26,480 --> 00:40:32,400
+this flow to a string so here we use the
+
+1067
+00:40:29,760 --> 00:40:33,760
+built-in stir function
+
+1068
+00:40:32,400 --> 00:40:34,800
+let's run the program and see what
+
+1069
+00:40:33,760 --> 00:40:36,839
+happens
+
+1070
+00:40:34,800 --> 00:40:40,000
+so
+
+1071
+00:40:36,839 --> 00:40:42,160
+170 in pounds and here's my weight in
+
+1072
+00:40:40,000 --> 00:40:44,720
+kilograms now let's try entering a
+
+1073
+00:40:42,160 --> 00:40:45,680
+weight in kilograms so run it one more
+
+1074
+00:40:44,720 --> 00:40:47,839
+time
+
+1075
+00:40:45,680 --> 00:40:49,760
+let's say 76
+
+1076
+00:40:47,839 --> 00:40:52,000
+kilos
+
+1077
+00:40:49,760 --> 00:40:55,040
+here we get a familiar error can only
+
+1078
+00:40:52,000 --> 00:40:57,839
+concatenate string to string not float
+
+1079
+00:40:55,040 --> 00:41:01,440
+so this error occurred on line five
+
+1080
+00:40:57,839 --> 00:41:03,440
+where we try to concatenate a string
+
+1081
+00:41:01,440 --> 00:41:06,880
+to a float so once again we need to
+
+1082
+00:41:03,440 --> 00:41:09,359
+convert this to a string object now
+
+1083
+00:41:06,880 --> 00:41:10,800
+let's run the program one more time
+
+1084
+00:41:09,359 --> 00:41:11,839
+76
+
+1085
+00:41:10,800 --> 00:41:16,000
+kilos
+
+1086
+00:41:11,839 --> 00:41:17,520
+is equal to 168 pounds
+
+1087
+00:41:16,000 --> 00:41:19,480
+hey guys i just wanted to let you know
+
+1088
+00:41:17,520 --> 00:41:21,200
+that i have an online coding school at
+
+1089
+00:41:19,480 --> 00:41:22,960
+codewoodmosh.com where you can find
+
+1090
+00:41:21,200 --> 00:41:24,400
+plenty of courses on web and mobile
+
+1091
+00:41:22,960 --> 00:41:26,560
+development in fact i have a
+
+1092
+00:41:24,400 --> 00:41:28,160
+comprehensive python course that teaches
+
+1093
+00:41:26,560 --> 00:41:30,319
+you everything about python from the
+
+1094
+00:41:28,160 --> 00:41:32,000
+basics to more advanced concepts so
+
+1095
+00:41:30,319 --> 00:41:33,440
+after you watch this tutorial if you
+
+1096
+00:41:32,000 --> 00:41:35,359
+want to learn more you may want to look
+
+1097
+00:41:33,440 --> 00:41:36,800
+at my python course it comes with a 30
+
+1098
+00:41:35,359 --> 00:41:38,480
+day money back guarantee and a
+
+1099
+00:41:36,800 --> 00:41:40,400
+certificate of completion you can add to
+
+1100
+00:41:38,480 --> 00:41:43,680
+your resume in case you're interested
+
+1101
+00:41:40,400 --> 00:41:43,680
+the link is below this video
+
+1102
+00:41:46,480 --> 00:41:50,319
+in this tutorial we're going to talk
+
+1103
+00:41:47,680 --> 00:41:52,640
+about while loops in python we use while
+
+1104
+00:41:50,319 --> 00:41:54,400
+loops to repeat a block of code multiple
+
+1105
+00:41:52,640 --> 00:41:57,119
+times for example let's say we want to
+
+1106
+00:41:54,400 --> 00:41:59,520
+print the numbers one to five a poor way
+
+1107
+00:41:57,119 --> 00:42:02,640
+of doing this is writing code like this
+
+1108
+00:41:59,520 --> 00:42:05,200
+print one then print two print 3
+
+1109
+00:42:02,640 --> 00:42:07,520
+print 4 and print 5.
+
+1110
+00:42:05,200 --> 00:42:09,839
+now why is this a bad approach well what
+
+1111
+00:42:07,520 --> 00:42:12,079
+if we wanted to print the numbers 1 to 1
+
+1112
+00:42:09,839 --> 00:42:14,000
+million we don't want to write 1 million
+
+1113
+00:42:12,079 --> 00:42:16,720
+lines of code each line printing a
+
+1114
+00:42:14,000 --> 00:42:17,599
+number this is where we use while loops
+
+1115
+00:42:16,720 --> 00:42:19,280
+so
+
+1116
+00:42:17,599 --> 00:42:21,839
+we'll start off by declaring a variable
+
+1117
+00:42:19,280 --> 00:42:23,040
+like i and set it to our initial number
+
+1118
+00:42:21,839 --> 00:42:25,599
+let's say one
+
+1119
+00:42:23,040 --> 00:42:27,520
+then we type while and here we type a
+
+1120
+00:42:25,599 --> 00:42:29,359
+condition so once again we can use our
+
+1121
+00:42:27,520 --> 00:42:32,720
+comparison operators
+
+1122
+00:42:29,359 --> 00:42:34,000
+let's say i less than 5 less than or
+
+1123
+00:42:32,720 --> 00:42:36,319
+equal to 5.
+
+1124
+00:42:34,000 --> 00:42:38,079
+as long as this condition is true then
+
+1125
+00:42:36,319 --> 00:42:40,640
+the code that we write inside of the
+
+1126
+00:42:38,079 --> 00:42:43,680
+while block will get executed so here we
+
+1127
+00:42:40,640 --> 00:42:45,280
+type a colon then press enter now we
+
+1128
+00:42:43,680 --> 00:42:48,079
+have a block of code
+
+1129
+00:42:45,280 --> 00:42:50,720
+in this block we can print i
+
+1130
+00:42:48,079 --> 00:42:53,760
+and then we need to increment i y one so
+
+1131
+00:42:50,720 --> 00:42:56,400
+we set i to i plus one if you don't do
+
+1132
+00:42:53,760 --> 00:42:57,520
+this i will always be one and this block
+
+1133
+00:42:56,400 --> 00:43:00,079
+of code
+
+1134
+00:42:57,520 --> 00:43:02,000
+will get executed indefinitely it will
+
+1135
+00:43:00,079 --> 00:43:04,240
+never terminate basically our program
+
+1136
+00:43:02,000 --> 00:43:05,440
+will continue running until it runs out
+
+1137
+00:43:04,240 --> 00:43:06,160
+of memory
+
+1138
+00:43:05,440 --> 00:43:08,960
+so
+
+1139
+00:43:06,160 --> 00:43:11,359
+in the first iteration i is 1 is less
+
+1140
+00:43:08,960 --> 00:43:13,599
+than 5 so python is going to execute
+
+1141
+00:43:11,359 --> 00:43:16,480
+this block of code it will print 1 on
+
+1142
+00:43:13,599 --> 00:43:18,880
+the terminal and then i becomes 2.
+
+1143
+00:43:16,480 --> 00:43:21,040
+then the control moves back over here so
+
+1144
+00:43:18,880 --> 00:43:23,760
+python evaluates this condition
+
+1145
+00:43:21,040 --> 00:43:26,240
+2 is less than or equal to 5 so the
+
+1146
+00:43:23,760 --> 00:43:27,760
+condition is true and once again python
+
+1147
+00:43:26,240 --> 00:43:30,079
+is going to execute this block one more
+
+1148
+00:43:27,760 --> 00:43:32,240
+time in the second iteration we're going
+
+1149
+00:43:30,079 --> 00:43:34,960
+to see two on the terminal and then i
+
+1150
+00:43:32,240 --> 00:43:37,119
+will become three so this will continue
+
+1151
+00:43:34,960 --> 00:43:39,040
+until this condition is no longer true
+
+1152
+00:43:37,119 --> 00:43:40,960
+let me show you so
+
+1153
+00:43:39,040 --> 00:43:43,359
+let's run this program
+
+1154
+00:43:40,960 --> 00:43:45,599
+now we see the numbers one to five so
+
+1155
+00:43:43,359 --> 00:43:47,920
+this is the beauty of while loops
+
+1156
+00:43:45,599 --> 00:43:49,359
+i can easily change five
+
+1157
+00:43:47,920 --> 00:43:51,440
+to one
+
+1158
+00:43:49,359 --> 00:43:53,599
+thousand and by the way i'm separating
+
+1159
+00:43:51,440 --> 00:43:55,359
+these three digits using an underscore
+
+1160
+00:43:53,599 --> 00:43:56,880
+this makes my number more readable we
+
+1161
+00:43:55,359 --> 00:43:58,720
+don't have to add this but it just makes
+
+1162
+00:43:56,880 --> 00:44:00,880
+our code more readable
+
+1163
+00:43:58,720 --> 00:44:03,760
+so let's run the program
+
+1164
+00:44:00,880 --> 00:44:06,560
+now we see the numbers 1 to 1000. it's
+
+1165
+00:44:03,760 --> 00:44:08,800
+much easier than 1000 lines of code each
+
+1166
+00:44:06,560 --> 00:44:10,720
+printing a number okay now let me show
+
+1167
+00:44:08,800 --> 00:44:12,880
+you something really cool
+
+1168
+00:44:10,720 --> 00:44:14,800
+so i'm going to change this
+
+1169
+00:44:12,880 --> 00:44:17,200
+to 10.
+
+1170
+00:44:14,800 --> 00:44:19,040
+now instead of printing i i want to
+
+1171
+00:44:17,200 --> 00:44:20,800
+print an expression so i'm going to
+
+1172
+00:44:19,040 --> 00:44:23,599
+multiply i
+
+1173
+00:44:20,800 --> 00:44:25,520
+by a string an asterisk
+
+1174
+00:44:23,599 --> 00:44:27,440
+now you might be confused here because
+
+1175
+00:44:25,520 --> 00:44:30,480
+earlier i told you that in python we
+
+1176
+00:44:27,440 --> 00:44:32,480
+cannot concatenate a number to a string
+
+1177
+00:44:30,480 --> 00:44:34,960
+but here i'm using the multiplication
+
+1178
+00:44:32,480 --> 00:44:37,359
+operator well this is different we can
+
+1179
+00:44:34,960 --> 00:44:39,599
+multiply a number by a string and this
+
+1180
+00:44:37,359 --> 00:44:42,720
+will repeat that string based on the
+
+1181
+00:44:39,599 --> 00:44:45,359
+value of that number so if i is one
+
+1182
+00:44:42,720 --> 00:44:47,440
+we're gonna see one asterisk if i is
+
+1183
+00:44:45,359 --> 00:44:49,599
+five we're going to see five asterisks
+
+1184
+00:44:47,440 --> 00:44:51,440
+let me show you so when we run this
+
+1185
+00:44:49,599 --> 00:44:53,599
+program
+
+1186
+00:44:51,440 --> 00:44:56,720
+we see this triangle shape because in
+
+1187
+00:44:53,599 --> 00:44:59,599
+the first iteration i is one so we see
+
+1188
+00:44:56,720 --> 00:45:02,000
+one asterisk in every iteration i is
+
+1189
+00:44:59,599 --> 00:45:04,079
+incremented by one so we see one extra
+
+1190
+00:45:02,000 --> 00:45:07,200
+asterisk and finally in the last
+
+1191
+00:45:04,079 --> 00:45:10,560
+iteration i is 10 and we see 10
+
+1192
+00:45:07,200 --> 00:45:10,560
+asterisks on the terminal
+
+1193
+00:45:15,040 --> 00:45:19,359
+so you have learned about three types of
+
+1194
+00:45:16,640 --> 00:45:21,520
+data in python we have numbers which can
+
+1195
+00:45:19,359 --> 00:45:24,480
+be integers or floats
+
+1196
+00:45:21,520 --> 00:45:26,800
+we have booleans and strings
+
+1197
+00:45:24,480 --> 00:45:29,520
+these are what we refer to as primitive
+
+1198
+00:45:26,800 --> 00:45:31,839
+or basic types in python now in python
+
+1199
+00:45:29,520 --> 00:45:34,000
+we have a bunch of complex types as well
+
+1200
+00:45:31,839 --> 00:45:35,839
+these complex types are very useful in
+
+1201
+00:45:34,000 --> 00:45:37,119
+building real applications
+
+1202
+00:45:35,839 --> 00:45:40,000
+in this tutorial we're going to talk
+
+1203
+00:45:37,119 --> 00:45:42,400
+about lists we use lists whenever we
+
+1204
+00:45:40,000 --> 00:45:44,560
+want to represent a list of objects like
+
+1205
+00:45:42,400 --> 00:45:45,599
+a list of numbers or a list of names let
+
+1206
+00:45:44,560 --> 00:45:47,760
+me show you
+
+1207
+00:45:45,599 --> 00:45:49,040
+so i'm going to declare a variable
+
+1208
+00:45:47,760 --> 00:45:51,119
+called names
+
+1209
+00:45:49,040 --> 00:45:53,040
+and set it to a list of names
+
+1210
+00:45:51,119 --> 00:45:55,760
+so here we add square brackets to
+
+1211
+00:45:53,040 --> 00:45:58,319
+represent a list and now we can add one
+
+1212
+00:45:55,760 --> 00:46:01,839
+or more objects inside this list in this
+
+1213
+00:45:58,319 --> 00:46:02,960
+list we add a bunch of names like john
+
+1214
+00:46:01,839 --> 00:46:04,240
+bob
+
+1215
+00:46:02,960 --> 00:46:05,200
+marsh
+
+1216
+00:46:04,240 --> 00:46:07,760
+sam
+
+1217
+00:46:05,200 --> 00:46:10,480
+and mary so we separate this element
+
+1218
+00:46:07,760 --> 00:46:11,440
+these items using a comma okay
+
+1219
+00:46:10,480 --> 00:46:15,040
+now
+
+1220
+00:46:11,440 --> 00:46:16,240
+let's print our list so print names
+
+1221
+00:46:15,040 --> 00:46:18,720
+take a look
+
+1222
+00:46:16,240 --> 00:46:19,599
+it comes out exactly like how we wrote
+
+1223
+00:46:18,720 --> 00:46:21,599
+it
+
+1224
+00:46:19,599 --> 00:46:23,680
+now we can also get individual elements
+
+1225
+00:46:21,599 --> 00:46:26,160
+in this list for example if we want to
+
+1226
+00:46:23,680 --> 00:46:29,040
+get the first element in this list here
+
+1227
+00:46:26,160 --> 00:46:31,040
+we type a pair of square brackets and
+
+1228
+00:46:29,040 --> 00:46:33,599
+inside the square brackets we type an
+
+1229
+00:46:31,040 --> 00:46:36,240
+index the index of the first element in
+
+1230
+00:46:33,599 --> 00:46:38,000
+this list is zero so now when we run
+
+1231
+00:46:36,240 --> 00:46:39,440
+this program we're going to see john on
+
+1232
+00:46:38,000 --> 00:46:40,880
+the terminal
+
+1233
+00:46:39,440 --> 00:46:41,680
+there you go
+
+1234
+00:46:40,880 --> 00:46:43,680
+now
+
+1235
+00:46:41,680 --> 00:46:45,520
+in python we can also use a negative
+
+1236
+00:46:43,680 --> 00:46:47,200
+index this is a feature that i
+
+1237
+00:46:45,520 --> 00:46:48,880
+personally have not seen in other
+
+1238
+00:46:47,200 --> 00:46:52,079
+programming languages
+
+1239
+00:46:48,880 --> 00:46:54,319
+so if 0 represents the first element in
+
+1240
+00:46:52,079 --> 00:46:57,520
+this list what do you think
+
+1241
+00:46:54,319 --> 00:46:59,920
+negative 1 represents it represents the
+
+1242
+00:46:57,520 --> 00:47:02,720
+last element in this list let's verify
+
+1243
+00:46:59,920 --> 00:47:03,680
+it so let's run the program and here's
+
+1244
+00:47:02,720 --> 00:47:06,000
+mary
+
+1245
+00:47:03,680 --> 00:47:09,200
+what about
+
+1246
+00:47:06,000 --> 00:47:10,800
+negative 2 well that represents the
+
+1247
+00:47:09,200 --> 00:47:12,400
+second element
+
+1248
+00:47:10,800 --> 00:47:15,760
+from the end of the list
+
+1249
+00:47:12,400 --> 00:47:17,839
+so let's run the program and here's some
+
+1250
+00:47:15,760 --> 00:47:20,400
+then we can also change an object at a
+
+1251
+00:47:17,839 --> 00:47:22,640
+given index for example let's say here
+
+1252
+00:47:20,400 --> 00:47:24,640
+we made a mistake and this john should
+
+1253
+00:47:22,640 --> 00:47:28,160
+not be spelled with an h
+
+1254
+00:47:24,640 --> 00:47:29,119
+so we need to reset it we type names of
+
+1255
+00:47:28,160 --> 00:47:30,559
+zero
+
+1256
+00:47:29,119 --> 00:47:33,760
+now we treat this like a regular
+
+1257
+00:47:30,559 --> 00:47:36,559
+variable so we set it to a new value
+
+1258
+00:47:33,760 --> 00:47:38,640
+we set it to john without an h now let's
+
+1259
+00:47:36,559 --> 00:47:41,680
+print our list
+
+1260
+00:47:38,640 --> 00:47:44,160
+and here's our updated list beautiful
+
+1261
+00:47:41,680 --> 00:47:46,559
+we can also select a range of values for
+
+1262
+00:47:44,160 --> 00:47:48,960
+example let's say we're only interested
+
+1263
+00:47:46,559 --> 00:47:51,599
+in the first three names
+
+1264
+00:47:48,960 --> 00:47:54,000
+so over here we type square brackets
+
+1265
+00:47:51,599 --> 00:47:56,559
+and here we need to type two indexes a
+
+1266
+00:47:54,000 --> 00:47:58,559
+start index and an end index
+
+1267
+00:47:56,559 --> 00:48:00,319
+our start index is a zero because we
+
+1268
+00:47:58,559 --> 00:48:03,680
+want to start from here
+
+1269
+00:48:00,319 --> 00:48:06,640
+and our end index is going to be zero
+
+1270
+00:48:03,680 --> 00:48:10,800
+one two plus one that's going to be
+
+1271
+00:48:06,640 --> 00:48:12,720
+three so we add a colon three so python
+
+1272
+00:48:10,800 --> 00:48:15,599
+is going to return all the elements from
+
+1273
+00:48:12,720 --> 00:48:17,920
+the start index up to the end index but
+
+1274
+00:48:15,599 --> 00:48:22,160
+excluding the end index so it's going to
+
+1275
+00:48:17,920 --> 00:48:24,640
+return the elements at index 0 1 and 2.
+
+1276
+00:48:22,160 --> 00:48:27,040
+take a look
+
+1277
+00:48:24,640 --> 00:48:29,040
+here are the first three names
+
+1278
+00:48:27,040 --> 00:48:31,359
+and by the way
+
+1279
+00:48:29,040 --> 00:48:35,119
+this expression does not modify our
+
+1280
+00:48:31,359 --> 00:48:37,599
+original list it returns a new list so
+
+1281
+00:48:35,119 --> 00:48:40,559
+right after this print statement if we
+
+1282
+00:48:37,599 --> 00:48:42,640
+print our original list
+
+1283
+00:48:40,559 --> 00:48:47,400
+you can see that it's not changed
+
+1284
+00:48:42,640 --> 00:48:47,400
+so this is how we use lists in python
+
+1285
+00:48:51,440 --> 00:48:55,520
+earlier i told you that strengths in
+
+1286
+00:48:52,960 --> 00:48:57,200
+python are objects objects in
+
+1287
+00:48:55,520 --> 00:48:59,040
+programming are kind of like objects in
+
+1288
+00:48:57,200 --> 00:49:01,119
+the real world like your mobile phone
+
+1289
+00:48:59,040 --> 00:49:02,880
+your bicycle the remote control of your
+
+1290
+00:49:01,119 --> 00:49:06,160
+tv and so on they have certain
+
+1291
+00:49:02,880 --> 00:49:08,559
+capabilities so if we type a string here
+
+1292
+00:49:06,160 --> 00:49:10,720
+and then press dot we can see all the
+
+1293
+00:49:08,559 --> 00:49:12,640
+functions or methods available in a
+
+1294
+00:49:10,720 --> 00:49:15,040
+string object in python
+
+1295
+00:49:12,640 --> 00:49:17,200
+now lists are also objects so they have
+
+1296
+00:49:15,040 --> 00:49:19,280
+a bunch of methods for adding items or
+
+1297
+00:49:17,200 --> 00:49:20,880
+removing them and so on let me show you
+
+1298
+00:49:19,280 --> 00:49:22,559
+so i'm going to declare
+
+1299
+00:49:20,880 --> 00:49:25,760
+a list of numbers
+
+1300
+00:49:22,559 --> 00:49:27,680
+let's say 1 2 3 4 and 5.
+
+1301
+00:49:25,760 --> 00:49:30,240
+now to add a new element at the end of
+
+1302
+00:49:27,680 --> 00:49:31,760
+this list we can use the append method
+
+1303
+00:49:30,240 --> 00:49:33,040
+so we type numbers
+
+1304
+00:49:31,760 --> 00:49:35,520
+that append
+
+1305
+00:49:33,040 --> 00:49:39,119
+and here we type 6.
+
+1306
+00:49:35,520 --> 00:49:41,839
+now let's print our list
+
+1307
+00:49:39,119 --> 00:49:43,760
+so here's our updated list beautiful
+
+1308
+00:49:41,839 --> 00:49:45,280
+now what if you want to insert a number
+
+1309
+00:49:43,760 --> 00:49:46,400
+somewhere in the middle or at the
+
+1310
+00:49:45,280 --> 00:49:49,200
+beginning
+
+1311
+00:49:46,400 --> 00:49:52,640
+for that we use the insert method
+
+1312
+00:49:49,200 --> 00:49:53,920
+so we're going to call the insert method
+
+1313
+00:49:52,640 --> 00:49:55,599
+now on the top
+
+1314
+00:49:53,920 --> 00:49:56,400
+go to the view menu
+
+1315
+00:49:55,599 --> 00:49:58,640
+and
+
+1316
+00:49:56,400 --> 00:50:01,680
+look at parameter info look at the
+
+1317
+00:49:58,640 --> 00:50:02,559
+shortcut on a mac computer it's command
+
+1318
+00:50:01,680 --> 00:50:05,200
+and p
+
+1319
+00:50:02,559 --> 00:50:07,680
+on windows it's probably control and p
+
+1320
+00:50:05,200 --> 00:50:10,240
+if we use this shortcut we can see the
+
+1321
+00:50:07,680 --> 00:50:12,079
+values that this method expects
+
+1322
+00:50:10,240 --> 00:50:14,960
+so the first value that this method
+
+1323
+00:50:12,079 --> 00:50:16,800
+expects is an index value and the type
+
+1324
+00:50:14,960 --> 00:50:18,480
+of this value is an integer
+
+1325
+00:50:16,800 --> 00:50:21,359
+so if i want to insert a value at the
+
+1326
+00:50:18,480 --> 00:50:23,920
+beginning of this list i should pass 0
+
+1327
+00:50:21,359 --> 00:50:25,680
+as the index of the first element right
+
+1328
+00:50:23,920 --> 00:50:26,960
+so let's pass 0.
+
+1329
+00:50:25,680 --> 00:50:29,040
+now
+
+1330
+00:50:26,960 --> 00:50:31,440
+the second value is highlighted so the
+
+1331
+00:50:29,040 --> 00:50:34,160
+second value is an object and the type
+
+1332
+00:50:31,440 --> 00:50:36,480
+of this is t that basically means this
+
+1333
+00:50:34,160 --> 00:50:38,559
+can be any type we can pass a number we
+
+1334
+00:50:36,480 --> 00:50:40,720
+can pass a boolean we can pass a string
+
+1335
+00:50:38,559 --> 00:50:42,240
+we can pass a list or any type of
+
+1336
+00:50:40,720 --> 00:50:45,119
+objects in python
+
+1337
+00:50:42,240 --> 00:50:47,359
+so i'm going to pass negative 1. now
+
+1338
+00:50:45,119 --> 00:50:49,359
+let's run our program
+
+1339
+00:50:47,359 --> 00:50:50,960
+you can see negative 1 appeared at the
+
+1340
+00:50:49,359 --> 00:50:52,960
+beginning of our list
+
+1341
+00:50:50,960 --> 00:50:55,200
+we also have a method for removing items
+
+1342
+00:50:52,960 --> 00:50:56,640
+so let's call
+
+1343
+00:50:55,200 --> 00:50:57,839
+remove
+
+1344
+00:50:56,640 --> 00:50:59,440
+three
+
+1345
+00:50:57,839 --> 00:51:01,680
+let's run the program
+
+1346
+00:50:59,440 --> 00:51:02,800
+three is gone we only have one two four
+
+1347
+00:51:01,680 --> 00:51:04,400
+and five
+
+1348
+00:51:02,800 --> 00:51:07,119
+now if you wanna remove all the items in
+
+1349
+00:51:04,400 --> 00:51:08,960
+the list we call the clear method so
+
+1350
+00:51:07,119 --> 00:51:11,520
+clear
+
+1351
+00:51:08,960 --> 00:51:13,599
+this method doesn't expect any values
+
+1352
+00:51:11,520 --> 00:51:14,559
+so let's run our program our list is
+
+1353
+00:51:13,599 --> 00:51:16,000
+empty
+
+1354
+00:51:14,559 --> 00:51:18,720
+now sometimes you want to know if a
+
+1355
+00:51:16,000 --> 00:51:21,680
+given item exists in our list or not to
+
+1356
+00:51:18,720 --> 00:51:23,920
+do that we use the in operator so
+
+1357
+00:51:21,680 --> 00:51:26,000
+let's remove this line
+
+1358
+00:51:23,920 --> 00:51:28,160
+instead of printing our numbers list i'm
+
+1359
+00:51:26,000 --> 00:51:29,200
+going to print an expression
+
+1360
+00:51:28,160 --> 00:51:30,000
+one
+
+1361
+00:51:29,200 --> 00:51:31,119
+in
+
+1362
+00:51:30,000 --> 00:51:33,040
+numbers
+
+1363
+00:51:31,119 --> 00:51:35,520
+so here we're using the in operator
+
+1364
+00:51:33,040 --> 00:51:37,520
+we're checking to see if one is in the
+
+1365
+00:51:35,520 --> 00:51:40,400
+numbers list so this is a boolean
+
+1366
+00:51:37,520 --> 00:51:41,760
+expression it returns a boolean value
+
+1367
+00:51:40,400 --> 00:51:43,359
+take a look
+
+1368
+00:51:41,760 --> 00:51:45,680
+so we get true
+
+1369
+00:51:43,359 --> 00:51:47,359
+obviously if we search for a value that
+
+1370
+00:51:45,680 --> 00:51:48,559
+doesn't exist in this list
+
+1371
+00:51:47,359 --> 00:51:50,880
+like 10
+
+1372
+00:51:48,559 --> 00:51:52,400
+we get false okay
+
+1373
+00:51:50,880 --> 00:51:54,480
+now finally there are times you want to
+
+1374
+00:51:52,400 --> 00:51:57,040
+know how many items you have in the list
+
+1375
+00:51:54,480 --> 00:51:58,000
+to do that you can use the built-in lend
+
+1376
+00:51:57,040 --> 00:52:00,319
+function
+
+1377
+00:51:58,000 --> 00:52:03,520
+so let's print
+
+1378
+00:52:00,319 --> 00:52:05,280
+len of numbers so len
+
+1379
+00:52:03,520 --> 00:52:07,040
+is a built-in function just like the
+
+1380
+00:52:05,280 --> 00:52:09,359
+print function that is why it's
+
+1381
+00:52:07,040 --> 00:52:12,960
+highlighted as purple it returns the
+
+1382
+00:52:09,359 --> 00:52:17,240
+number of elements in a list take a look
+
+1383
+00:52:12,960 --> 00:52:17,240
+so we have five elements in this list
+
+1384
+00:52:20,800 --> 00:52:25,040
+when writing python programs there are
+
+1385
+00:52:22,960 --> 00:52:27,520
+times you want to iterate over a list
+
+1386
+00:52:25,040 --> 00:52:29,680
+and access each item individually let me
+
+1387
+00:52:27,520 --> 00:52:31,440
+show you so i'm going to declare
+
+1388
+00:52:29,680 --> 00:52:33,839
+a list of numbers
+
+1389
+00:52:31,440 --> 00:52:36,640
+one two three four five
+
+1390
+00:52:33,839 --> 00:52:38,480
+now if we print this list
+
+1391
+00:52:36,640 --> 00:52:41,040
+it comes out exactly like how we wrote
+
+1392
+00:52:38,480 --> 00:52:42,800
+it using the square bracket notation but
+
+1393
+00:52:41,040 --> 00:52:45,359
+what if we wanted to print each item on
+
+1394
+00:52:42,800 --> 00:52:48,160
+a separate line that is where we use the
+
+1395
+00:52:45,359 --> 00:52:50,000
+for loop let me show you so we're not
+
+1396
+00:52:48,160 --> 00:52:52,079
+going to print the entire list
+
+1397
+00:52:50,000 --> 00:52:53,839
+instead we're going to type 4
+
+1398
+00:52:52,079 --> 00:52:55,920
+now we declare a variable which is
+
+1399
+00:52:53,839 --> 00:52:57,440
+called a loop variable
+
+1400
+00:52:55,920 --> 00:52:59,440
+let's call it item
+
+1401
+00:52:57,440 --> 00:53:00,559
+then we type in
+
+1402
+00:52:59,440 --> 00:53:03,280
+numbers
+
+1403
+00:53:00,559 --> 00:53:06,319
+next we add a colon to start a block of
+
+1404
+00:53:03,280 --> 00:53:08,880
+code so this is what we call a for loop
+
+1405
+00:53:06,319 --> 00:53:10,559
+with this for loop we can iterate over
+
+1406
+00:53:08,880 --> 00:53:13,440
+all the items in this list
+
+1407
+00:53:10,559 --> 00:53:15,680
+in each iteration this item variable is
+
+1408
+00:53:13,440 --> 00:53:18,160
+going to hold one value so in the first
+
+1409
+00:53:15,680 --> 00:53:19,599
+iteration item is going to be equal to 1
+
+1410
+00:53:18,160 --> 00:53:22,240
+and the second iteration is going to be
+
+1411
+00:53:19,599 --> 00:53:25,119
+equal to 2 and so on so
+
+1412
+00:53:22,240 --> 00:53:26,559
+now if we print item
+
+1413
+00:53:25,119 --> 00:53:28,559
+and run our program
+
+1414
+00:53:26,559 --> 00:53:31,119
+we see each item on a new line
+
+1415
+00:53:28,559 --> 00:53:33,119
+so this is how we use a for loop now we
+
+1416
+00:53:31,119 --> 00:53:34,960
+could also achieve the same thing using
+
+1417
+00:53:33,119 --> 00:53:37,760
+a while loop but our code would be a
+
+1418
+00:53:34,960 --> 00:53:39,680
+little bit longer let me show you so
+
+1419
+00:53:37,760 --> 00:53:42,079
+we would have to start by declaring a
+
+1420
+00:53:39,680 --> 00:53:44,880
+loop variable outside of our while loop
+
+1421
+00:53:42,079 --> 00:53:47,920
+let's say i we set it to zero
+
+1422
+00:53:44,880 --> 00:53:49,680
+now we say while i is less than
+
+1423
+00:53:47,920 --> 00:53:51,119
+here we need to find out how many items
+
+1424
+00:53:49,680 --> 00:53:53,119
+we have in this list
+
+1425
+00:53:51,119 --> 00:53:54,839
+so we use the len function
+
+1426
+00:53:53,119 --> 00:53:58,000
+len of
+
+1427
+00:53:54,839 --> 00:53:59,680
+numbers as long as i is less than the
+
+1428
+00:53:58,000 --> 00:54:00,800
+length of the list
+
+1429
+00:53:59,680 --> 00:54:02,240
+print
+
+1430
+00:54:00,800 --> 00:54:04,880
+now we can use the square bracket
+
+1431
+00:54:02,240 --> 00:54:06,880
+notation to get the element at this
+
+1432
+00:54:04,880 --> 00:54:08,839
+index so
+
+1433
+00:54:06,880 --> 00:54:13,280
+numbers of
+
+1434
+00:54:08,839 --> 00:54:15,520
+i now we need to increment i by one so i
+
+1435
+00:54:13,280 --> 00:54:16,880
+equals i plus one
+
+1436
+00:54:15,520 --> 00:54:19,040
+let's run the program and see what we
+
+1437
+00:54:16,880 --> 00:54:19,040
+get
+
+1438
+00:54:19,359 --> 00:54:23,760
+so we get the numbers one to five these
+
+1439
+00:54:21,760 --> 00:54:25,599
+are coming out from our for loop and
+
+1440
+00:54:23,760 --> 00:54:27,440
+then we get the numbers one to five one
+
+1441
+00:54:25,599 --> 00:54:29,440
+more time these are coming out from our
+
+1442
+00:54:27,440 --> 00:54:31,599
+while loop now if you compare these two
+
+1443
+00:54:29,440 --> 00:54:33,680
+approaches you can definitely see that
+
+1444
+00:54:31,599 --> 00:54:35,839
+the implementation using the for loop is
+
+1445
+00:54:33,680 --> 00:54:37,520
+shorter and easier to understand we
+
+1446
+00:54:35,839 --> 00:54:39,680
+don't have to use the square bracket
+
+1447
+00:54:37,520 --> 00:54:41,599
+notation we don't have to call the len
+
+1448
+00:54:39,680 --> 00:54:43,680
+function we don't have to declare a
+
+1449
+00:54:41,599 --> 00:54:45,760
+variable a loop variable and then
+
+1450
+00:54:43,680 --> 00:54:48,400
+increment it explicitly
+
+1451
+00:54:45,760 --> 00:54:50,079
+so with the for loop in each iteration
+
+1452
+00:54:48,400 --> 00:54:54,240
+the item variable will automatically
+
+1453
+00:54:50,079 --> 00:54:54,240
+hold one value in this list
+
+1454
+00:54:58,799 --> 00:55:02,559
+in this tutorial we're going to talk
+
+1455
+00:55:00,160 --> 00:55:04,720
+about the range function in python we
+
+1456
+00:55:02,559 --> 00:55:07,119
+use the range function to generate a
+
+1457
+00:55:04,720 --> 00:55:08,720
+sequence of numbers let me show you so
+
+1458
+00:55:07,119 --> 00:55:10,480
+you type range
+
+1459
+00:55:08,720 --> 00:55:12,720
+this is a built-in function just like
+
+1460
+00:55:10,480 --> 00:55:15,040
+the print and input functions here we
+
+1461
+00:55:12,720 --> 00:55:17,359
+can pass a value like 5 and this will
+
+1462
+00:55:15,040 --> 00:55:19,359
+return a range object
+
+1463
+00:55:17,359 --> 00:55:21,599
+a range object is an object that can
+
+1464
+00:55:19,359 --> 00:55:23,119
+store a sequence of numbers let me show
+
+1465
+00:55:21,599 --> 00:55:25,119
+you so
+
+1466
+00:55:23,119 --> 00:55:27,040
+let's call that numbers
+
+1467
+00:55:25,119 --> 00:55:28,400
+so this is a range object
+
+1468
+00:55:27,040 --> 00:55:32,319
+in this object we're going to have the
+
+1469
+00:55:28,400 --> 00:55:34,880
+numbers 0 to 5 but excluding 5.
+
+1470
+00:55:32,319 --> 00:55:37,359
+now if we print
+
+1471
+00:55:34,880 --> 00:55:39,440
+numbers
+
+1472
+00:55:37,359 --> 00:55:41,680
+we're going to see this message range of
+
+1473
+00:55:39,440 --> 00:55:42,799
+zero to five not the actual numbers
+
+1474
+00:55:41,680 --> 00:55:45,520
+because this is the default
+
+1475
+00:55:42,799 --> 00:55:47,119
+representation of a range object to see
+
+1476
+00:55:45,520 --> 00:55:49,920
+the actual numbers we need to iterate
+
+1477
+00:55:47,119 --> 00:55:51,599
+over this range object using a for loop
+
+1478
+00:55:49,920 --> 00:55:53,920
+in the last video you learned how to
+
+1479
+00:55:51,599 --> 00:55:56,160
+iterate over a list using a for loop but
+
+1480
+00:55:53,920 --> 00:55:58,079
+we can also iterate over a range object
+
+1481
+00:55:56,160 --> 00:56:00,160
+using a for loop basically we can use
+
+1482
+00:55:58,079 --> 00:56:02,880
+the for loop with any object that
+
+1483
+00:56:00,160 --> 00:56:05,359
+represents a sequence of objects
+
+1484
+00:56:02,880 --> 00:56:07,040
+so instead of printing numbers
+
+1485
+00:56:05,359 --> 00:56:08,720
+we're going to use a for loop
+
+1486
+00:56:07,040 --> 00:56:11,599
+for number
+
+1487
+00:56:08,720 --> 00:56:13,200
+in numbers colon
+
+1488
+00:56:11,599 --> 00:56:15,040
+we're going to print
+
+1489
+00:56:13,200 --> 00:56:17,040
+number
+
+1490
+00:56:15,040 --> 00:56:20,000
+take a look
+
+1491
+00:56:17,040 --> 00:56:21,520
+now we see the numbers zero to four
+
+1492
+00:56:20,000 --> 00:56:22,880
+so
+
+1493
+00:56:21,520 --> 00:56:24,880
+range of five
+
+1494
+00:56:22,880 --> 00:56:27,440
+generates a sequence of numbers starting
+
+1495
+00:56:24,880 --> 00:56:28,240
+from zero up to the number we specify
+
+1496
+00:56:27,440 --> 00:56:30,799
+here
+
+1497
+00:56:28,240 --> 00:56:31,920
+now if we supply two values
+
+1498
+00:56:30,799 --> 00:56:34,319
+the first value is going to be
+
+1499
+00:56:31,920 --> 00:56:36,000
+considered the starting value
+
+1500
+00:56:34,319 --> 00:56:37,839
+and the second value is going to be
+
+1501
+00:56:36,000 --> 00:56:40,799
+considered the ending value and it's
+
+1502
+00:56:37,839 --> 00:56:43,119
+going to be excluded so range of 5 to 10
+
+1503
+00:56:40,799 --> 00:56:45,200
+is going to generate the numbers 5 to 9.
+
+1504
+00:56:43,119 --> 00:56:46,720
+take a look
+
+1505
+00:56:45,200 --> 00:56:49,359
+there you go
+
+1506
+00:56:46,720 --> 00:56:52,240
+now we can also supply a third value and
+
+1507
+00:56:49,359 --> 00:56:53,839
+that will be used as a step so let's say
+
+1508
+00:56:52,240 --> 00:56:56,160
+instead of having a sequence of numbers
+
+1509
+00:56:53,839 --> 00:56:59,599
+like five six seven eight nine we wanna
+
+1510
+00:56:56,160 --> 00:57:03,359
+jump two numbers at a time so 5 7 9 and
+
+1511
+00:56:59,599 --> 00:57:05,040
+so on so here we pass 2 as the step take
+
+1512
+00:57:03,359 --> 00:57:10,079
+a look
+
+1513
+00:57:05,040 --> 00:57:12,079
+so we get these odd numbers 5 7 and 9.
+
+1514
+00:57:10,079 --> 00:57:13,839
+so this is the range function in python
+
+1515
+00:57:12,079 --> 00:57:16,319
+like quite often you see the range
+
+1516
+00:57:13,839 --> 00:57:17,599
+function used as part of a for loop
+
+1517
+00:57:16,319 --> 00:57:20,160
+because we don't really need to store
+
+1518
+00:57:17,599 --> 00:57:22,720
+the result in a separate variable we can
+
+1519
+00:57:20,160 --> 00:57:24,799
+call the range function right here where
+
+1520
+00:57:22,720 --> 00:57:27,680
+we are using the numbers variable so we
+
+1521
+00:57:24,799 --> 00:57:29,760
+can type range of five and this will
+
+1522
+00:57:27,680 --> 00:57:32,799
+return a range object holding the
+
+1523
+00:57:29,760 --> 00:57:33,920
+numbers zero to four take a look
+
+1524
+00:57:32,799 --> 00:57:35,440
+there you go
+
+1525
+00:57:33,920 --> 00:57:37,200
+so we don't really need to store the
+
+1526
+00:57:35,440 --> 00:57:39,520
+result in a separate variable like
+
+1527
+00:57:37,200 --> 00:57:42,079
+numbers
+
+1528
+00:57:39,520 --> 00:57:42,079
+there you go
+
+1529
+00:57:47,440 --> 00:57:51,200
+in this tutorial we're going to talk
+
+1530
+00:57:48,720 --> 00:57:53,200
+about tuples in python tuples are kind
+
+1531
+00:57:51,200 --> 00:57:55,520
+of like lists we use them to store a
+
+1532
+00:57:53,200 --> 00:57:57,680
+sequence of objects but tuples are
+
+1533
+00:57:55,520 --> 00:58:00,160
+immutable which means we cannot change
+
+1534
+00:57:57,680 --> 00:58:02,319
+them once we create them let me show you
+
+1535
+00:58:00,160 --> 00:58:04,799
+so i'm going to start by defining a list
+
+1536
+00:58:02,319 --> 00:58:06,640
+of numbers 1 2 3.
+
+1537
+00:58:04,799 --> 00:58:07,599
+now we use square brackets to define a
+
+1538
+00:58:06,640 --> 00:58:10,640
+list
+
+1539
+00:58:07,599 --> 00:58:13,440
+and parenthesis to define a tuple so now
+
+1540
+00:58:10,640 --> 00:58:14,960
+this numbers variable is storing a tuple
+
+1541
+00:58:13,440 --> 00:58:18,400
+if we try
+
+1542
+00:58:14,960 --> 00:58:20,240
+to reassign let's say the first element
+
+1543
+00:58:18,400 --> 00:58:22,559
+we're going to get an error
+
+1544
+00:58:20,240 --> 00:58:24,960
+topple object does not support item
+
+1545
+00:58:22,559 --> 00:58:26,799
+assignment so this is what i meant by
+
+1546
+00:58:24,960 --> 00:58:28,240
+tuples are immutable they're
+
+1547
+00:58:26,799 --> 00:58:29,839
+unchangeable
+
+1548
+00:58:28,240 --> 00:58:32,640
+also
+
+1549
+00:58:29,839 --> 00:58:34,799
+if you type numbers dot
+
+1550
+00:58:32,640 --> 00:58:37,359
+you don't see any methods like append
+
+1551
+00:58:34,799 --> 00:58:39,200
+insert remove and so on we only have
+
+1552
+00:58:37,359 --> 00:58:41,040
+count and index
+
+1553
+00:58:39,200 --> 00:58:43,359
+count returns the number of occurrences
+
+1554
+00:58:41,040 --> 00:58:44,559
+of an element for example
+
+1555
+00:58:43,359 --> 00:58:45,680
+if we have
+
+1556
+00:58:44,559 --> 00:58:47,520
+let's say
+
+1557
+00:58:45,680 --> 00:58:50,079
+two threes in this tuple
+
+1558
+00:58:47,520 --> 00:58:51,119
+and call count of three this will return
+
+1559
+00:58:50,079 --> 00:58:53,760
+2.
+
+1560
+00:58:51,119 --> 00:58:56,160
+the other method we have here is index
+
+1561
+00:58:53,760 --> 00:58:58,640
+and this returns the index of the first
+
+1562
+00:58:56,160 --> 00:58:59,359
+occurrence of the given element
+
+1563
+00:58:58,640 --> 00:59:00,799
+now
+
+1564
+00:58:59,359 --> 00:59:03,040
+these other methods you see here that
+
+1565
+00:59:00,799 --> 00:59:05,520
+start with an underscore they're called
+
+1566
+00:59:03,040 --> 00:59:07,599
+magic methods it's an advanced topic and
+
+1567
+00:59:05,520 --> 00:59:09,520
+i've covered it in detail in my complete
+
+1568
+00:59:07,599 --> 00:59:11,440
+python programming course if you're
+
+1569
+00:59:09,520 --> 00:59:12,400
+interested the link is down below this
+
+1570
+00:59:11,440 --> 00:59:14,880
+video
+
+1571
+00:59:12,400 --> 00:59:16,480
+so tuples are immutable we cannot change
+
+1572
+00:59:14,880 --> 00:59:18,480
+them once we create them
+
+1573
+00:59:16,480 --> 00:59:20,240
+now practically speaking most of the
+
+1574
+00:59:18,480 --> 00:59:21,920
+time you would be using lists but there
+
+1575
+00:59:20,240 --> 00:59:23,440
+are times that once you create a list of
+
+1576
+00:59:21,920 --> 00:59:25,680
+objects you want to make sure that
+
+1577
+00:59:23,440 --> 00:59:28,160
+somewhere in your program you or someone
+
+1578
+00:59:25,680 --> 00:59:30,160
+else is not going to accidentally modify
+
+1579
+00:59:28,160 --> 00:59:33,440
+that list if that's the case then you
+
+1580
+00:59:30,160 --> 00:59:34,880
+should use a tuple
+
+1581
+00:59:33,440 --> 00:59:36,839
+hey guys i just wanted to let you know
+
+1582
+00:59:34,880 --> 00:59:38,559
+that i have an online coding school at
+
+1583
+00:59:36,839 --> 00:59:40,319
+codewoodmarch.com where you can find
+
+1584
+00:59:38,559 --> 00:59:41,839
+plenty of courses on web and mobile
+
+1585
+00:59:40,319 --> 00:59:44,000
+development in fact i have a
+
+1586
+00:59:41,839 --> 00:59:45,520
+comprehensive python course that teaches
+
+1587
+00:59:44,000 --> 00:59:47,760
+you everything about python from the
+
+1588
+00:59:45,520 --> 00:59:49,440
+basics to more advanced concepts so
+
+1589
+00:59:47,760 --> 00:59:50,799
+after you watch this tutorial if you
+
+1590
+00:59:49,440 --> 00:59:52,720
+want to learn more you may want to look
+
+1591
+00:59:50,799 --> 00:59:54,240
+at my python course it comes with a 30
+
+1592
+00:59:52,720 --> 00:59:55,920
+day money back guarantee and a
+
+1593
+00:59:54,240 --> 00:59:57,839
+certificate of completion you can add to
+
+1594
+00:59:55,920 --> 01:00:01,440
+your resume in case you're interested
+
+1595
+00:59:57,839 --> 01:00:04,440
+the link is below this video
+
+1596
+01:00:01,440 --> 01:00:04,440
+hey
