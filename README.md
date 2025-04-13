@@ -78,11 +78,6 @@ An interactive Streamlit chatbot that lets you ask natural language questions ab
 
 _(Optional — add a screenshot here)_
 
----
-
-## 🙌 Acknowledgements
-
-Built with ❤️ during the Ironhack Final Project by [@KJanzon](https://github.com/KJanzon)
 
 ---
 
