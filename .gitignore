@@ -4,3 +4,5 @@ venv/
 __pycache__/
 vectorstore/
 *.pyc
+structure.txt
+.DS_Store
