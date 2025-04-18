@@ -1,32 +1,32 @@
-# 🎮 YouTube Q&A Chatbot
+# 🎮  Python Tutor powered by youtube videos and Chatbot
 
-An interactive Streamlit chatbot that lets you ask natural language questions about YouTube videos — powered by LangChain, OpenAI, and ChromaDB.
+An interactive chatbot that lets you ask natural language questions about YouTube videos — powered by LangChain, OpenAI, and ChromaDB. Specialised in Youtube videos for learning python programming. 
 
 ---
 
 ## 🚀 Features
 
-- 🔗 Paste a YouTube video URL and embed it directly in the app
+- 🔗 Paste a YouTube video URL about Python coding and embed it directly in the app
 - 🧠 Ask questions about the content using natural language
 - 📖 Vector search over transcript chunks with timestamp + chapter metadata
-- ⏩ Clickable timestamps that jump to the exact moment in the embedded video
-- 🔭 Fuzzy matching to prioritize answers from the most relevant **chapter**
-- 📟 Sidebar shows **chapter titles** parsed from video description
-- 🤖 Powered by OpenAI (GPT-3.5-turbo) + LangChain RetrievalQA
+- 📺 Plays part of the video that answers the question
+- 📟 Additional explanations and coding challenge from a LLM
+- 🤖 Powered by Llama3 8B + LangChain RetrievalQA
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Component     | Description                          |
-|---------------|--------------------------------------|
-| Streamlit     | UI framework                         |
-| LangChain     | RAG pipeline (Retrieval-Augmented)   |
-| OpenAI        | LLM + Embeddings                     |
-| ChromaDB      | Vector store                         |
-| pytubefix     | Captions & metadata extraction       |
-| dotenv        | Secure API key loading               |
-
+Component | Description
+Streamlit | Frontend UI for chat, video player, and code interaction
+LangChain | Retrieval-Augmented Generation (RAG) orchestration
+ChatGroq (LLaMA3-8B) | LLM used for answering questions and generating challenges
+OpenAIEmbeddings | Converts transcript chunks into vectors
+ChromaDB | Local vector database for storing per-video embeddings
+pytubefix | Downloads captions and extracts video metadata
+dotenv | Loads environment variables and API keys
+Custom Code Runner | Executes user-submitted Python code safely
+GPT-4 (optional) | Evaluates the quality of LLaMA3 responses post-hoc
 ---
 
 ## 📦 Setup Instructions
@@ -83,9 +83,7 @@ _(Optional — add a screenshot here)_
 
 ## 🧠 TODO / Roadmap
 
-- [ ] Upload your own `.srt` files manually
-- [ ] Add Whisper API for automatic transcript generation
 - [ ] Multi-video querying (cross-video RAG)
-- [ ] LangSmith evaluation & tracing
-- [ ] UI: Highlight chapter matches in chat output
+
+
 
