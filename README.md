@@ -1,4 +1,4 @@
-# 🎮  Python Tutor powered by youtube videos and Chatbot
+#  Python Tutor powered by youtube videos and Chatbot
 
 An interactive chatbot that lets you ask natural language questions about YouTube videos — powered by LangChain, OpenAI, and ChromaDB. Specialised in Youtube videos for learning python programming. 
 
