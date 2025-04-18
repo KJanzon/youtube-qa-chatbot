@@ -21,12 +21,11 @@ An interactive chatbot that lets you ask natural language questions about YouTub
 |------------------------|--------------------------------------------------------------|
 | **Streamlit**          | Frontend UI for chat, video player, and code interaction     |
 | **LangChain**          | Retrieval-Augmented Generation (RAG) orchestration           |
+| **LangSmith**          | Tracing and debugging of LLM chains and prompts              |
 | **ChatGroq (LLaMA3-8B)** | LLM used for answering questions and generating challenges |
 | **OpenAIEmbeddings**   | Converts transcript chunks into vector representations       |
 | **ChromaDB**           | Local vector database for storing per-video embeddings       |
 | **pytubefix**          | Downloads captions and extracts video metadata               |
-| **dotenv**             | Loads environment variables and API keys                     |
-| **Custom Code Runner** | Executes user-submitted Python code safely                   |
 | **GPT-4 (optional)**   | Evaluates the quality of LLaMA3 responses post-hoc           |
 
 ---
