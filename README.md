@@ -10,7 +10,7 @@ An interactive chatbot that lets you ask natural language questions about YouTub
 - 🧠 Ask questions about the content using natural language
 - 📖 Vector search over transcript chunks with timestamp + chapter metadata
 - 📺 Plays part of the video that answers the question
-- 📟 Additional explanations and coding challenge from a LLM
+- 📟 Additional explanations and coding challenge 
 - 🤖 Powered by Llama3 8B + LangChain RetrievalQA
 
 ---
@@ -88,6 +88,7 @@ An interactive chatbot that lets you ask natural language questions about YouTub
 ## 🧠 TODO / Roadmap
 
 - [ ] Multi-video querying (cross-video RAG)
+- [ ] Reference official python tutorial to ensure correct answers (https://docs.python.org/3/tutorial/index.html)
 
 
 
