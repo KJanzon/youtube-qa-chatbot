@@ -81,8 +81,7 @@ An interactive chatbot that lets you ask natural language questions about YouTub
 ## 📸 Screenshot
 
 <img width="897" alt="Screenshot 2025-04-18 at 09 07 07" src="https://github.com/user-attachments/assets/b9031295-43fa-4d17-ab91-2dd0315312dc" />
-
----<img width="607" alt="Screenshot 2025-04-18 at 11 54 56" src="https://github.com/user-attachments/assets/3f9816da-a618-4991-8d17-b8cbb844686c" />
+<img width="607" alt="Screenshot 2025-04-18 at 11 54 56" src="https://github.com/user-attachments/assets/3f9816da-a618-4991-8d17-b8cbb844686c" />
 <img width="597" alt="Screenshot 2025-04-18 at 11 55 03" src="https://github.com/user-attachments/assets/f523bf57-ccae-4708-9ff8-37883d611940" />
 
 
