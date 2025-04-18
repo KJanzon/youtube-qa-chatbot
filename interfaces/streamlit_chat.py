@@ -13,21 +13,44 @@ from langchain.chains import RetrievalQA
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_groq import ChatGroq
+from langchain.prompts import PromptTemplate
+from langchain.chains.question_answering import load_qa_chain
 
 from app.youtube_processor import process_and_embed_video, extract_chapters, extract_video_id
 from utils.time import timestamp_to_seconds
 from utils.chapters import rank_sources_by_chapter_similarity
 from utils.code_runner import run_user_code
 
+import json
+from datetime import datetime
+
 # Load environment variables
 load_dotenv()
+
+# Custom prompt focused on Python programming
+QA_PROMPT = PromptTemplate(
+    input_variables=["context", "question"],
+    template="""
+You are a helpful assistant that answers questions about Python programming. Write a very short answer to the question, and provide an example"
+
+---
+
+Context:
+{context}
+
+---
+
+User Question: {question}
+
+Answer:
+"""
+)
 
 # --- Streamlit config ---
 st.set_page_config(page_title="YouTube Q&A Bot", layout="wide")
 st.title("🤖 YouTube Video Q&A Chatbot")
 
 # --- Session state init ---
-# We now store all data for assistant messages inside the chat history.
 for key, default in {
     "video_timestamp": 0,
     "chat_history": [],
@@ -43,7 +66,6 @@ for key, default in {
 # --- Sidebar: Input ---
 video_url = st.sidebar.text_input("Paste YouTube video link:")
 
-# Save video URL in session
 if video_url and "video_url" not in st.session_state:
     st.session_state.video_url = video_url
 video_url = st.session_state.get("video_url", "")
@@ -54,7 +76,6 @@ if video_url:
         st.session_state.video_id = video_id
         persist_dir = os.path.join("vectorstore", "youtube", video_id)
 
-        # Clear vectorstore
         if st.sidebar.button("🗑️ Clear vectorstore cache for this video"):
             if os.path.exists(persist_dir):
                 shutil.rmtree(persist_dir)
@@ -68,7 +89,6 @@ if video_url:
         else:
             st.sidebar.info("📂 Using cached vectorstore")
 
-        # Chapters
         chapters = extract_chapters(video_id)
         if chapters:
             st.sidebar.markdown("### 📁 Video Chapters")
@@ -80,35 +100,29 @@ if video_url:
         else:
             st.sidebar.markdown("_No chapters found in the video description._")
 
-        # Set up retrieval
         embeddings = OpenAIEmbeddings()
         vectorstore = Chroma(persist_directory=persist_dir, embedding_function=embeddings)
         retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
 
-        # LLM setup
         llm = ChatGroq(model="llama3-8b-8192", groq_api_key=os.getenv("GROQ_API_KEY"))
-        qa_chain = RetrievalQA.from_chain_type(
-            llm=llm,
+        qa_chain = RetrievalQA(
             retriever=retriever,
+            combine_documents_chain=load_qa_chain(llm, chain_type="stuff", prompt=QA_PROMPT),
             return_source_documents=True
         )
 
-        # --- Chat input ---
         query = st.chat_input("Ask a question about the video...")
 
         if query:
-            # Append the user question
             st.session_state.chat_history.append(("user", query))
 
             with st.spinner("🤖 Thinking..."):
                 result = qa_chain.invoke({"query": query})
-                # Re-rank sources based on chapter similarity
                 result["source_documents"] = rank_sources_by_chapter_similarity(
                     query, result["source_documents"], chapters
                 )
                 assistant_answer = result["result"]
 
-                # Ask for a short challenge to test understanding
                 challenge_prompt = (
                     f"The user just learned from this assistant response:\n\"\"\"\n{assistant_answer}\n\"\"\"\n\n"
                     f"Now, write a very short Python challenge for a beginner to test their understanding of the same concept. "
@@ -117,33 +131,46 @@ if video_url:
                 )
                 challenge = llm.invoke(challenge_prompt).content.strip()
 
-            # Retrieve the timestamp from the first source document, or default to "00:00:00"
             ts = result["source_documents"][0].metadata.get("timestamp", "00:00:00") if result["source_documents"] else "00:00:00"
             assistant_entry = {
                 "message": assistant_answer,
                 "timestamp": timestamp_to_seconds(ts)
             }
-            # Append the assistant answer (with its timestamp) to chat history
             st.session_state.chat_history.append(("assistant", assistant_entry))
             st.session_state.last_result_docs_list.append(result["source_documents"])
             st.session_state.challenge_list.append(challenge)
             st.session_state.learn_more_open.append(False)
+            # ✅ Log interaction for evaluation
+            log_data = {
+                "timestamp": datetime.now().isoformat(),
+                "query": query,
+                "llama3_answer": assistant_answer,
+                "challenge": challenge,
+                "sources": [
+                    {
+                        "timestamp": doc.metadata.get("timestamp", ""),
+                        "text": doc.page_content
+                    }
+                    for doc in result["source_documents"]
+                ]
+            }
+            os.makedirs("eval", exist_ok=True)
+            with open("eval/llama3_logs.jsonl", "a") as f:
+                f.write(json.dumps(log_data) + "\n")
 
-        # --- Display chat history ---
-        assistant_index = 0  # Counter to track only assistant messages.
+
+        assistant_index = 0
         for i, (role, msg) in enumerate(st.session_state.chat_history):
             with st.chat_message(role):
                 if role == "user":
                     st.write(msg)
                 elif role == "assistant":
-                    # msg is a dictionary containing "message" and "timestamp"
                     seconds = msg["timestamp"]
                     video_id = st.session_state.get("video_id", "")
                     embed_url = f"https://www.youtube.com/embed/{video_id}?start={seconds}&autoplay=0"
-                    st.markdown(f"`[debug] video timestamp:` `{seconds}` seconds")
+                    #st.markdown(f"`[debug] video timestamp:` `{seconds}` seconds")
                     st.components.v1.iframe(embed_url, height=360)
 
-                    # Wrap Sources in an expander (collapsed by default)
                     if assistant_index < len(st.session_state.last_result_docs_list):
                         with st.expander("📚 Sources", expanded=False):
                             for j, doc in enumerate(st.session_state.last_result_docs_list[assistant_index]):
@@ -159,11 +186,10 @@ if video_url:
                                 with col2:
                                     st.markdown(f"_{snippet}..._")
 
-                    # Ensure the learn more list is large enough
                     while len(st.session_state.learn_more_open) <= assistant_index:
                         st.session_state.learn_more_open.append(False)
 
-                    if st.button("📘 Learn more", key=f"learn_more_btn_{assistant_index}"):
+                    if st.button("📚 Learn more", key=f"learn_more_btn_{assistant_index}"):
                         st.session_state.learn_more_open[assistant_index] = not st.session_state.learn_more_open[assistant_index]
 
                     if st.session_state.learn_more_open[assistant_index]:
@@ -171,21 +197,19 @@ if video_url:
                             st.markdown("### 🤖 Assistant's Answer")
                             st.write(msg["message"])
 
-                            # Look for a code snippet in the assistant answer and enable running it
                             match = re.search(r"```(?:python)?\n(.*?)```", msg["message"], re.DOTALL)
                             if match:
                                 code = match.group(1)
-                                st.markdown("🧪 Try the example below:")
-                                editable_code = st.text_area("📝 Edit & Run Python", value=code, height=200, key=f"code_{assistant_index}")
+                                st.markdown("🧚 Try the example below:")
+                                editable_code = st.text_area("🖍️ Edit & Run Python", value=code, height=200, key=f"code_{assistant_index}")
                                 if st.button("▶️ Run Code", key=f"run_{assistant_index}"):
                                     with st.spinner("Running..."):
                                         output = run_user_code(editable_code)
                                     st.code(output or "✅ No output", language="text")
 
-                            # Display the challenge for this assistant message
                             challenge = st.session_state.challenge_list[assistant_index] if assistant_index < len(st.session_state.challenge_list) else ""
                             if challenge:
-                                st.markdown("### 🧩 Your Challenge")
+                                st.markdown("### 🤩 Your Challenge")
                                 st.info(challenge)
                                 user_solution = st.text_area("💡 Write your solution here:", height=200, key=f"solution_{assistant_index}")
                                 if st.button("✅ Run My Solution", key=f"solution_run_{assistant_index}"):
@@ -197,7 +221,6 @@ if video_url:
         if st.session_state.jump_triggered:
             st.session_state.jump_triggered = False
 
-        # Auto-scroll to the bottom to show the most recent answer.
         st.components.v1.html(
             """
             <script>
