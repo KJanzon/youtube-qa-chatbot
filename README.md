@@ -15,6 +15,11 @@ An interactive chatbot that lets you ask natural language questions about YouTub
 
 ---
 
+[📊 View Project Presentation Slides](https://docs.google.com/presentation/d/19BNzcpygXF9NgYLnCB0zwoK9xLzAMUrQvNWI1IFxeGA/edit?usp=sharing)
+
+
+---
+
 ## 🛠️ Tech Stack
 
 | Component              | Description                                                  |
